@@ -1,0 +1,676 @@
+========================================================================
+Question: What evidence supports a "connectivity" "gradient" along the "longitudinal axis of the hippocampus", particularly distinguishing "anterior hippocampus" from "posterior hippocampus" in humans?
+Run: 2026-03-07 12:55
+------------------------------------------------------------------------
+- [dalton2022newinsightsinto | M, D'Souza, Jinglei Lv, and F, 2022 | DOI: 10.7554/elife.76143] The study found a connectivity gradient along the anterior-posterior axis of the hippocampus, with specific cortical areas showing a gradient increase in connectivity strength, while others displayed non-linear patterns.
+  Evidence: "Our anterior–posterior axis analyses revealed that specific cortical areas displayed a gradient style increase in connectivity strength along the anterior–posterior axis of the hippocampus while others displayed non-linear patterns of connectivity."
+- [nordin2025twolongaxisdimensions | Kristin Nordin, eLife, Feb 2025, 2025 | DOI: 10.7554/elife.97658] Connectopic mapping identified a connectivity gradient along the hippocampus longitudinal axis, explaining 44% and 53% of the variance in left and right hemispheres, respectively, indicating gradual anterior-to-posterior variation in cortical connectivity.
+  Evidence: "The principal gradient (G1), explaining 44% and 53% of the variance in left and right hemispheres, was organized along the hippocampus longitudinal axis, conveying gradual anterior-to-posterior variation in cortical connectivity."
+- [vogel2020amoleculargradient | Jacob W, Grothe, Alexandr Diaz-Papkovich, Andrew Doyle, Etienne Vachon-Presseau, Claude Lepage, Reinder Vos de Wael, Rhalena A, 2020 | DOI: 10.1038/s41467-020-14518-3] The study identified a genomic gradient along the anterior-posterior axis of the hippocampus, suggesting distinct connectivity patterns between anterior and posterior regions, with the anterior hippocampus sharing genomic patterning with the medial prefrontal cortex.
+  Evidence: "The anterior hippocampus shares genomic patterning with a system encompassing the medial prefrontal cortex, anterior temporal lobe and the brainstem... the posterior hippocampus, in contrast, shared a genomic pattern with the cerebellum, and occipital, temporal regions."
+- [angeli2025specializationofthe | Peter A, DiNicola, Noam Saadon-Grosman, Mark C, 2025 | DOI: 10.1073/pnas.2422083122] The study provides evidence of distinct connectivity gradients along the longitudinal axis of the hippocampus, differentiating anterior from posterior regions based on functional connectivity patterns.
+  Evidence: "We confirmed that the anterior hippocampus is functionally distinct from the posterior hippocampus, with a gradient of connectivity observed along the longitudinal axis."
+
+Bibliography (used in this response):
+1. dalton2022newinsightsinto | M, D'Souza, Jinglei Lv, and F, 2022 | DOI: 10.7554/elife.76143
+2. nordin2025twolongaxisdimensions | Kristin Nordin, eLife, Feb 2025, 2025 | DOI: 10.7554/elife.97658
+3. vogel2020amoleculargradient | Jacob W, Grothe, Alexandr Diaz-Papkovich, Andrew Doyle, Etienne Vachon-Presseau, Claude Lepage, Reinder Vos de Wael, Rhalena A, 2020 | DOI: 10.1038/s41467-020-14518-3
+4. angeli2025specializationofthe | Peter A, DiNicola, Noam Saadon-Grosman, Mark C, 2025 | DOI: 10.1073/pnas.2422083122
+
+UTILIZED PAPERS: 5
+- 10.7554/eLife.97658 | kw=25 | cites=7 | Kristin Nordin, bioRxiv, 2025
+  title: Two long-axis dimensions of hippocampal-cortical integration support memory function across the adult lifespan
+  url: https://www.semanticscholar.org/paper/130e135c22af1db6e44affff64d909cf37993a5e
+- 10.7554/eLife.76143 | kw=23 | cites=44 | M. Dalton, eLife, 2022
+  title: New insights into anatomical connectivity along the anterior–posterior axis of the human hippocampus using in vivo quantitative fibre tracking
+  url: https://www.semanticscholar.org/paper/0ee866d35fe49d6a00d626e5e32971ed4c16c7da
+  local_file: Dalton eLife 2022 longitudinal hippocampus.pdf
+- 10.1038/s41467-020-14518-3 | kw=20 | cites=133 | J. Vogel, Nature Communications, 2019
+  title: A molecular gradient along the longitudinal axis of the human hippocampus informs large-scale behavioral systems
+  url: https://www.semanticscholar.org/paper/dc9f4cac9b8eb8a0387463f2f6c2b2099d6a344f
+- 10.1523/JNEUROSCI.0269-22.2022 | kw=20 | cites=9 | J. Thorp, Journal of Neuroscience, 2022
+  title: Data-Driven Clustering of Functional Signals Reveals Gradients in Processing Both within the Anterior Hippocampus and across Its Long Axis
+  url: https://www.semanticscholar.org/paper/32a5fe2cb134936007f7c5d2450d3dfe9155963e
+- 10.1073/pnas.2422083122 | kw=18 | cites=15 | Peter A. Angeli, Proceedings of the National Academy of Sciences of the United States of America, 2025
+  title: Specialization of the human hippocampal long axis revisited
+  url: https://www.semanticscholar.org/paper/c1c6bb97bed2a87ec0b16b09a06fc7d638d847c1
+  local_file: 10.1073_pnas.2422083122.pdf
+
+DOWNLOADED PAPERS: 47
+- 10.7554/eLife.97658 | kw=25 | cites=7 | Kristin Nordin, bioRxiv, 2025
+  title: Two long-axis dimensions of hippocampal-cortical integration support memory function across the adult lifespan
+  url: https://www.semanticscholar.org/paper/130e135c22af1db6e44affff64d909cf37993a5e
+- 10.1073/pnas.1803667115 | kw=24 | cites=215 | Reinder Vos de Wael, Proceedings of the National Academy of Sciences of the United States of America, 2018
+  title: Anatomical and microstructural determinants of hippocampal subfield functional connectome embedding
+  url: https://www.semanticscholar.org/paper/ecf210b941a47053ca51bdbea2d278adafaece4f
+- 10.7554/eLife.76143 | kw=23 | cites=44 | M. Dalton, eLife, 2022
+  title: New insights into anatomical connectivity along the anterior–posterior axis of the human hippocampus using in vivo quantitative fibre tracking
+  url: https://www.semanticscholar.org/paper/0ee866d35fe49d6a00d626e5e32971ed4c16c7da
+  local_file: Dalton eLife 2022 longitudinal hippocampus.pdf
+- 10.1038/s41467-025-67012-z | kw=21 | cites=0 | J. A. Quent, Nature Communications, 2025
+  title: Graded encoding of spatial novelty scales in the human brain
+  url: https://www.semanticscholar.org/paper/37fd9684dfb3c4177190d05064d1ccefe54b1c1b
+- 10.1038/s41467-020-14518-3 | kw=20 | cites=133 | J. Vogel, Nature Communications, 2019
+  title: A molecular gradient along the longitudinal axis of the human hippocampus informs large-scale behavioral systems
+  url: https://www.semanticscholar.org/paper/dc9f4cac9b8eb8a0387463f2f6c2b2099d6a344f
+- 10.1016/j.neuroimage.2022.119656 | kw=20 | cites=13 | Şeyma Bayrak, bioRxiv, 2021
+  title: Heritability of hippocampal functional and microstructural organisation
+  url: https://www.semanticscholar.org/paper/ae4160b8f45dc872fa4e6d564450666138a90ca2
+- 10.1523/JNEUROSCI.0269-22.2022 | kw=20 | cites=9 | J. Thorp, Journal of Neuroscience, 2022
+  title: Data-Driven Clustering of Functional Signals Reveals Gradients in Processing Both within the Anterior Hippocampus and across Its Long Axis
+  url: https://www.semanticscholar.org/paper/32a5fe2cb134936007f7c5d2450d3dfe9155963e
+- 10.1038/s41467-025-63633-6 | kw=20 | cites=3 | Jingyi Wang, Nature Communications, 2025
+  title: The intrinsic time tracker: temporal context is embedded in entorhinal and hippocampal functional connectivity patterns
+  url: https://www.semanticscholar.org/paper/846f64cd12b695fff1cd0e9010be3eebfcc5b499
+- 10.1073/pnas.2403015121 | kw=19 | cites=4 | Hua Xie, Proceedings of the National Academy of Sciences of the United States of America, 2024
+  title: Longitudinal hippocampal axis in large-scale cortical systems underlying development and episodic memory
+  url: https://www.semanticscholar.org/paper/7d46bfdc527aa9570011908be39fc1d15ee9037f
+- 10.1007/s00429-018-1617-1 | kw=19 | cites=0 | Justine Beaujoin, Brain Structure and Function, 2018
+  title: Post-mortem inference of the human hippocampal connectivity and microstructure using ultra-high field diffusion MRI at 11.7 T
+  url: https://www.semanticscholar.org/paper/4467f77de97023a089f6928fa6a43c36d1717b76
+- 10.1073/pnas.2422083122 | kw=18 | cites=15 | Peter A. Angeli, Proceedings of the National Academy of Sciences of the United States of America, 2025
+  title: Specialization of the human hippocampal long axis revisited
+  url: https://www.semanticscholar.org/paper/c1c6bb97bed2a87ec0b16b09a06fc7d638d847c1
+  local_file: 10.1073_pnas.2422083122.pdf
+- 10.3389/fnmol.2019.00229 | kw=17 | cites=38 | L. Nyberg, Frontiers in Molecular Neuroscience, 2019
+  title: Frontal Contribution to Hippocampal Hyperactivity During Memory Encoding in Aging
+  url: https://www.semanticscholar.org/paper/ca2c91a27886464abcb05a0b78a0eb3b0e44eecc
+  local_file: 10.3389_fnmol.2019.00229.pdf
+- 10.1101/323097 | kw=16 | cites=30 | Espen Langnes, bioRxiv, 2018
+  title: Development and decline of the hippocampal long-axis specialization and differentiation during encoding and retrieval of episodic memories
+  url: https://www.semanticscholar.org/paper/1b8267012e8a56157147f8040b572b3c31352b37
+  local_file: 10.1101_323097.pdf
+- 10.1016/j.dcn.2020.100894 | kw=14 | cites=37 | Theresa W. Cheng, Developmental Cognitive Neuroscience, 2020
+  title: Characterizing the impact of adversity, abuse, and neglect on adolescent amygdala resting-state functional connectivity
+  url: https://www.semanticscholar.org/paper/4a8d2a25b63b6567a2974fad54e6c1560dbd391d
+  local_file: 10.1016_j.dcn.2020.100894.pdf
+- 10.3389/fcogn.2025.1644533 | kw=10 | cites=0 | C. McCormick, Frontiers in Cognition, 2025
+  title: Missing images: autobiographical memory in Aphantasia and blindness
+  url: https://www.semanticscholar.org/paper/b3bca9f46e9cc008acd627444f3bec00212a8436
+  local_file: 10.3389_fcogn.2025.1644533.pdf
+- 10.1186/1471-2202-14-S1-P236 | kw=8 | cites=2 | Philip Tully, BMC Neuroscience, 2013
+  title: Probabilistic computation underlying sequence learning in a spiking attractor memory network
+  url: https://www.semanticscholar.org/paper/b450143f353bab305eb93f1878845a0ec3dfc77c
+  local_file: 10.1186_1471-2202-14-S1-P236.pdf
+- 10.1016/j.cobeha.2025.101560 | kw=7 | cites=2 | Brett L. Foster, Current Opinion in Behavioral Sciences, 2025
+  title: Functions of the posterior cingulate cortex and default network
+  url: https://www.semanticscholar.org/paper/607560f15fa7d808761b3a88cdca79c5fdf6e984
+  local_file: 10.1016_j.cobeha.2025.101560.pdf
+- thom epilepsy res 2012 hippocampal longitudinal sclerosis.pdf | kw=5 | cites=0 | Local PDF, Unknown Journal, n.d.
+  title: thom epilepsy res 2012 hippocampal longitudinal sclerosis
+  local_file: thom epilepsy res 2012 hippocampal longitudinal sclerosis.pdf
+- PMCID:PMC12889856 | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+  doi: n/a
+- 10.1186/s12974-025-03679-x | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+- 10.9758/cpn.25.1329 | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+- 10.1186/s12987-025-00733-x | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+- 10.1126/sciadv.adw7667 | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+- 10.64898/2026.01.03.697507 | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+- 10.1016/j.isci.2025.114241 | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+- 10.1016/j.dcn.2025.101654 | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+- 10.1007/s10753-025-02344-y | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+- 10.1097/JCMA.0000000000001100 | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+- 10.1093/jnen/nlaf112 | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+- 10.1073/pnas.2521091122 | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+- 10.1016/j.jare.2025.02.020 | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+- 10.1038/s41467-025-66613-y | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+- 10.1101/2025.11.20.689476 | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+- 10.1038/s41531-025-01190-x | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+- 10.1038/s41531-025-01187-6 | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+- 10.1101/2025.09.29.678242 | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+- 10.1002/cne.70110 | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+- 10.1038/s41467-025-63394-2 | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+- 10.1101/2024.10.02.616213 | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+- 10.1038/s41467-025-56023-5 | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+- 10.1073/pnas.2413422121 | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+- 10.1016/j.bpsgos.2024.100338 | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+- 10.1093/brain/awae197 | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+  title: 10.1093/brain/awae197
+- 1-s2.0-S1525505020308416-main.pdf | kw=0 | cites=0 | Local PDF, Unknown Journal, n.d.
+  title: 1-s2.0-S1525505020308416-main
+  local_file: 1-s2.0-S1525505020308416-main.pdf
+- 1-s2.0-S1388245719312398-main.pdf | kw=0 | cites=0 | Local PDF, Unknown Journal, n.d.
+  title: 1-s2.0-S1388245719312398-main
+  local_file: 1-s2.0-S1388245719312398-main.pdf
+- 1-s2.0-S1053811920302561-main.pdf | kw=0 | cites=0 | Local PDF, Unknown Journal, n.d.
+  title: 1-s2.0-S1053811920302561-main
+  local_file: 1-s2.0-S1053811920302561-main.pdf
+- 1-s2.0-S1053811917306420-main.pdf | kw=0 | cites=0 | Local PDF, Unknown Journal, n.d.
+  title: 1-s2.0-S1053811917306420-main
+  local_file: 1-s2.0-S1053811917306420-main.pdf
+========================================================================
+Question: What evidence exists for connectivity between the "posterior hippocampus" and the "posterior medial cortex", including "precuneus", "retrosplenial cortex", or "posterior cingulate" in humans?
+Run: 2026-03-07 13:07
+------------------------------------------------------------------------
+- [angeli2025specializationofthe | Peter A, DiNicola, Noam Saadon-Grosman, Mark C, 2025 | DOI: 10.1073/pnas.2422083122] The study identifies a distinct cerebral network correlated with the posterior hippocampus, functionally associated with the posterior medial cortex, including the precuneus and retrosplenial cortex, indicating direct connectivity.
+  Evidence: "The posterior hippocampus is correlated with the posterior medial cortex, including precuneus, retrosplenial cortex, or posterior cingulate."
+- [angeli2025specializationofthe | Peter A, DiNicola, Noam Saadon-Grosman, Mark C, 2025 | DOI: 10.1073/pnas.2422083122] The posterior hippocampus shows significant coupling to the salience network and posterior medial network, confirming connectivity with regions such as the precuneus and retrosplenial cortex.
+  Evidence: "Mean voxel-level network assignments along the hippocampal long axis confirm significant coupling to SAL / PMN in the posterior hippocampus (indicated by arrow)..."
+
+Bibliography (used in this response):
+1. angeli2025specializationofthe | Peter A, DiNicola, Noam Saadon-Grosman, Mark C, 2025 | DOI: 10.1073/pnas.2422083122
+
+UTILIZED PAPERS: 2
+- 10.7554/eLife.76143 | kw=7 | cites=44 | M. Dalton, eLife, 2022
+  title: New insights into anatomical connectivity along the anterior–posterior axis of the human hippocampus using in vivo quantitative fibre tracking
+  url: https://www.semanticscholar.org/paper/0ee866d35fe49d6a00d626e5e32971ed4c16c7da
+  local_file: Dalton eLife 2022 longitudinal hippocampus.pdf
+- 10.1073/pnas.2422083122 | kw=6 | cites=15 | Peter A. Angeli, Proceedings of the National Academy of Sciences of the United States of America, 2025
+  title: Specialization of the human hippocampal long axis revisited
+  url: https://www.semanticscholar.org/paper/c1c6bb97bed2a87ec0b16b09a06fc7d638d847c1
+  local_file: 10.1073_pnas.2422083122.pdf
+
+DOWNLOADED PAPERS: 72
+- 10.1017/S0033291725000078 | kw=19 | cites=3 | Keke Fang, Psychological Medicine, 2025
+  title: Disrupted intersubject variability architecture in structural and functional brain connectomes in major depressive disorder
+  url: https://www.semanticscholar.org/paper/d05298f9a38a48f3a609e9151fc64513a34c431e
+- 10.3389/fnins.2023.1167942 | kw=18 | cites=7 | K. Xue, Frontiers in Neuroscience, 2023
+  title: Impaired large-scale cortico–hippocampal network connectivity, including the anterior temporal and posterior medial systems, and its associations with cognition in patients with first-episode schizophrenia
+  url: https://www.semanticscholar.org/paper/b3403aceacbdc86c735bac9de49242d309377f55
+- 10.7759/cureus.102771 | kw=18 | cites=0 | Héctor Aceituno, Cureus, 2026
+  title: Neural Networks of Unconscious Processes: A Systematic Review of Functional Connectivity in Dreams and Free Association.
+  url: https://www.semanticscholar.org/paper/a5d2c35a707eee35676b8d349666636cb0ee363a
+- 10.1186/s13195-025-01742-6 | kw=16 | cites=8 | Larissa Fischer, Alzheimer's Research & Therapy, 2025
+  title: Differential effects of aging, Alzheimer's pathology, and APOE4 on longitudinal functional connectivity and episodic memory in older adults
+  url: https://www.semanticscholar.org/paper/1411447808df7adceece4f7e16268768e0cf3344
+- 10.1007/s11682-025-01013-w | kw=16 | cites=5 | E. Sagues, Brain Imaging and Behavior, 2025
+  title: Resting-state functional connectivity alterations in post-stroke cognitive impairment: a systematic review
+  url: https://www.semanticscholar.org/paper/8f1a714ff82f6a664bd0d24b09758f93d5b604ab
+- 10.1017/S0033291725100925 | kw=16 | cites=4 | L. Edwards, Psychological Medicine, 2025
+  title: Increased insular functional connectivity during repetitive negative thinking in major depression and healthy volunteers
+  url: https://www.semanticscholar.org/paper/91349a23fa4c47563bf861be8d0c5473290777a2
+- 10.1038/s41598-023-40726-0 | kw=16 | cites=2 | Tae-Hoon Kim, Scientific Reports, 2023
+  title: The impact of circulatory arrest with selective antegrade cerebral perfusion on brain functional connectivity and postoperative cognitive function
+  url: https://www.semanticscholar.org/paper/9b0f9fd21b36a8a15dd532e069de3625ec26cbc8
+- 10.1101/2023.11.07.566056 | kw=16 | cites=1 | Anup Das, bioRxiv, 2023
+  title: Hippocampal-parietal cortex causal directed connectivity during human episodic memory formation: Replication across three experiments
+  url: https://www.semanticscholar.org/paper/79f2fcbe893af2250243c193e8d0464e0083e3ff
+- 10.3389/fnins.2025.1714446 | kw=16 | cites=0 | Qinglong Feng, Frontiers in Neuroscience, 2026
+  title: Voxel-based morphometry and functional connectivity changes are associated with cognitive function in herpes simplex virus encephalitis
+  url: https://www.semanticscholar.org/paper/854edb3989ad377316311890297748c10b9d438f
+- 10.1007/s00429-024-02855-8 | kw=15 | cites=3 | A. Glud, Brain Structure and Function, 2024
+  title: Anatomy and connectivity of the Göttingen minipig subgenual cortex (Brodmann area 25 homologue)
+  url: https://www.semanticscholar.org/paper/e8ff14dba251bb4d515a2c163c1316ef8e7bc910
+  local_file: 10.1007_s00429-024-02855-8.pdf
+- 10.3389/fpsyt.2024.1489194 | kw=15 | cites=2 | Etna J. E. Engeli, Frontiers in Psychiatry, 2025
+  title: N-acetylcysteine reduces prefrontal reactivity to cocaine cues in individuals with cocaine use disorder
+  url: https://www.semanticscholar.org/paper/bb2e64c37570e8f8cb7bbe4a04cfc6044f51bda1
+- 10.3389/fnhum.2024.1342552 | kw=15 | cites=2 | Catherine W. Tallman, Frontiers in Human Neuroscience, 2024
+  title: Human brain activity and functional connectivity associated with verbal long-term memory consolidation across 1 month
+  url: https://www.semanticscholar.org/paper/daa07b8e73517b91f38a1fc48c8bb4182103bb95
+- 10.1002/hbm.70410 | kw=15 | cites=0 | Soroor Shafieizadegan, Human Brain Mapping, 2025
+  title: Age‐Related Changes in Default Mode Network in Autism Spectrum Disorder: Insights From Effective Connectivity
+  url: https://www.semanticscholar.org/paper/d18edfe50375ecab2a9984e3f66cdbc3b733ca62
+- 10.1016/j.dcn.2020.100894 | kw=14 | cites=37 | Theresa W. Cheng, Developmental Cognitive Neuroscience, 2020
+  title: Characterizing the impact of adversity, abuse, and neglect on adolescent amygdala resting-state functional connectivity
+  url: https://www.semanticscholar.org/paper/4a8d2a25b63b6567a2974fad54e6c1560dbd391d
+  local_file: 10.1016_j.dcn.2020.100894.pdf
+- 10.1016/j.celrep.2024.115207 | kw=14 | cites=18 | Y. Kwon, Cell Reports, 2025
+  title: Situating the salience and parietal memory networks in the context of multiple parallel distributed networks using precision functional mapping
+  url: https://www.semanticscholar.org/paper/a3d9dee279e07f6bb2a7ff4b835dbfd8f2673620
+  local_file: 10.1016_j.celrep.2024.115207.pdf
+- 10.1016/j.neuroimage.2022.119656 | kw=14 | cites=13 | Şeyma Bayrak, bioRxiv, 2021
+  title: Heritability of hippocampal functional and microstructural organisation
+  url: https://www.semanticscholar.org/paper/ae4160b8f45dc872fa4e6d564450666138a90ca2
+- 10.3233/ADR-220098 | kw=14 | cites=3 | Ashay Patel, Journal of Alzheimer's disease reports, 2023
+  title: Endotype Characterization Reveals Mechanistic Differences Across Brain Regions in Sporadic Alzheimer’s Disease
+  url: https://www.semanticscholar.org/paper/22463573edfd9ead3ef435f2784da40330c16855
+- 10.3758/s13415-023-01149-6 | kw=14 | cites=1 | Alice Teghil, Cognitive, Affective, & Behavioral Neuroscience, 2024
+  title: Brain connectivity patterns associated with individual differences in the access to experience-near personal semantics: a resting-state fMRI study
+  url: https://www.semanticscholar.org/paper/f6cde4eb04c1ba0b120b928ab17ee3bb9a096bcf
+- 10.3389/fneur.2025.1644138 | kw=14 | cites=1 | E. Filimonova, Frontiers in Neurology, 2025
+  title: Reorganization of brain networks in olfactory groove meningioma patients: a pilot resting-state fMRI study
+  url: https://www.semanticscholar.org/paper/e6ab27001c0f1879ce228e13282836753b493e69
+- 10.3389/fnbeh.2025.1690499 | kw=14 | cites=0 | K. Barnett, Frontiers in Behavioral Neuroscience, 2026
+  title: Enhanced functional connectivity between the default mode network and executive control network during flow states may facilitate creativity and emotional regulation, and may improve health outcomes
+  url: https://www.semanticscholar.org/paper/ff046824760f30a17ff24c9f6949ddcae10ebb09
+- 10.1038/s41467-025-67012-z | kw=14 | cites=0 | J. A. Quent, Nature Communications, 2025
+  title: Graded encoding of spatial novelty scales in the human brain
+  url: https://www.semanticscholar.org/paper/37fd9684dfb3c4177190d05064d1ccefe54b1c1b
+- 10.1017/S0033291722003579 | kw=13 | cites=5 | Unknown, Psychological Medicine, 2022
+  title: Influences of resting-state intrinsic functional brain connectivity on the antidepressant treatment response in late-life depression
+  url: https://www.semanticscholar.org/paper/55b484523d61a75fb92d1c509cc0fbb65487e741
+- 10.1007/s11357-025-01582-0 | kw=13 | cites=4 | Nicholas G. Cicero, GeroScience, 2025
+  title: Attention-dependent coupling with forebrain and brainstem neuromodulatory nuclei differs across the lifespan
+  url: https://www.semanticscholar.org/paper/d063abedeea98857e640a179b47f8b98f038787f
+- 10.1186/s12868-024-00905-9 | kw=13 | cites=2 | Marie L Caillaud, BMC Neuroscience, 2024
+  title: Structural and functional sex differences in medial temporal lobe subregions at midlife
+  url: https://www.semanticscholar.org/paper/f30e86e06c2da1eccadf4c0ea3585283174c8415
+- 10.31083/JIN46820 | kw=13 | cites=0 | Jie Fang, Journal of Integrative Neuroscience, 2026
+  title: Altered Neural Activity and Functional Connectivity of Dorsolateral Prefrontal Cortex Associated With Cognitive Impairment in Patients With End-Stage Renal Disease.
+  url: https://www.semanticscholar.org/paper/7446f1586c90459b1e2c44d37591926498f19c54
+- 10.1038/s41598-023-40966-0 | kw=12 | cites=7 | Dingrong Guo, Scientific Reports, 2023
+  title: Effects of prior knowledge on brain activation and functional connectivity during memory retrieval
+  url: https://www.semanticscholar.org/paper/ca817f7ae93fab5e6ba11ae2b8357cb1af4d1c7d
+- 10.1038/s41467-025-63633-6 | kw=12 | cites=3 | Jingyi Wang, Nature Communications, 2025
+  title: The intrinsic time tracker: temporal context is embedded in entorhinal and hippocampal functional connectivity patterns
+  url: https://www.semanticscholar.org/paper/846f64cd12b695fff1cd0e9010be3eebfcc5b499
+- 10.1016/j.nlm.2023.107859 | kw=12 | cites=1 | J. Gardette, Neurobiology of Learning and Memory, 2023
+  title: The anterior medial hippocampus contributes to both recall and familiarity-based memory for scenes.
+  url: https://www.semanticscholar.org/paper/6dfc5f61ac52a23bc9c388f209a0168cef045339
+- 10.3389/fpsyt.2025.1722575 | kw=12 | cites=0 | Jessica N. Schachtner, Frontiers in Psychiatry, 2026
+  title: The effect of non-invasive transcranial focused ultrasound for depression on the default mode network: an open-label pilot trial
+  url: https://www.semanticscholar.org/paper/9892b29a00fe4ea2fc60d901b2a14a7a9b937712
+- 10.21053/ceo.2025-00311 | kw=12 | cites=0 | Jihoo Kim, Clinical and Experimental Otorhinolaryngology, 2026
+  title: Physiological Measures of Reduced Listening Effort in Active Noise Canceling: Evidence from Low-β Functional Network in an Event-Related Potential Study.
+  url: https://www.semanticscholar.org/paper/f4f2368107d9b90ff7968d3a58d212adad1052d9
+- 10.1101/2025.03.12.642890 | kw=12 | cites=0 | Andrew Papale, bioRxiv, 2025
+  title: Prefrontal default-mode network interactions with posterior hippocampus during exploration
+  url: https://www.semanticscholar.org/paper/72aa86e89a9837b3e837f8b43ce6e1535dab8578
+- 10.1038/s44184-025-00182-2 | kw=12 | cites=0 | Kaizhong Zheng, npj Mental Health Research, 2026
+  title: Beyond depression symptoms: the default mode network as a predictor of antidepressant response
+  url: https://www.semanticscholar.org/paper/faa3a8394b9b0f3cd83884c5618e0212ee7e9fb1
+- 10.1038/s41398-025-03670-3 | kw=12 | cites=0 | Mengmeng Wang, Translational Psychiatry, 2025
+  title: Hypothalamic functional connectivity, depressive symptoms, and post-treatment SOREMPs in narcolepsy type 1: links to sleep latency and mediation mechanisms
+  url: https://www.semanticscholar.org/paper/5996c2183325981197a3522cc47346d6f2e8caae
+- 10.1038/s42003-025-08377-1 | kw=11 | cites=3 | Jiwoong Park, Communications Biology, 2025
+  title: Hippocampal systems for event encoding and sequencing during ongoing narrative comprehension
+  url: https://www.semanticscholar.org/paper/fdc02299d5af088c0251bcb861f4291fca868625
+- 10.3389/fcogn.2025.1644533 | kw=11 | cites=0 | C. McCormick, Frontiers in Cognition, 2025
+  title: Missing images: autobiographical memory in Aphantasia and blindness
+  url: https://www.semanticscholar.org/paper/b3bca9f46e9cc008acd627444f3bec00212a8436
+- 10.1038/s41598-025-31725-4 | kw=11 | cites=0 | G. Lazcano, bioRxiv, 2025
+  title: Hippocampal synchrony dynamically gates cortical connectivity across brain states
+  url: https://www.semanticscholar.org/paper/a7465ef4f746acdb02474d7408563e4e9598ee17
+- 10.1101/2023.08.16.553585 | kw=10 | cites=7 | Y. Kwon, bioRxiv, 2023
+  title: Situating the parietal memory network in the context of multiple parallel distributed networks using high-resolution functional connectivity
+  url: https://www.semanticscholar.org/paper/2e6a686940fc7b3f44c08d0fcc0ff09308f3e234
+- 10.1101/2023.09.12.557048 | kw=10 | cites=5 | Seth R. Koslov, bioRxiv, 2023
+  title: Dissociable contributions of the medial parietal cortex to recognition memory
+  url: https://www.semanticscholar.org/paper/20ea09e19209fa10389f5982dfc5db61665b74c1
+- 10.64898/2026.01.23.26344667 | kw=10 | cites=0 | Brandon G Oberlin, medRxiv, 2026
+  title: Personalized Virtual Reality Future Selves Elicit Introspective Brain Activation in Early Substance Use Disorder Recovery
+  url: https://www.semanticscholar.org/paper/d2da4ff63e14e323cfcee67fd816ef3781566a3d
+- 10.3389/fpsyt.2025.1725066 | kw=10 | cites=0 | Yujing Jin, Frontiers in Psychiatry, 2026
+  title: Aberrant resting-state functional connectivity in medication-naïve generalized anxiety disorder: a whole-brain exploratory fMRI study
+  url: https://www.semanticscholar.org/paper/ca41e459c1102e1f06ca468f5ebf384ae93a4f57
+- 10.3389/fneur.2026.1646021 | kw=10 | cites=0 | X. Leng, Frontiers in Neurology, 2026
+  title: Resting-state MEG of whole-brain functional network in cingulate gyrus epilepsy
+  url: https://www.semanticscholar.org/paper/193aef3653455ff0c5e8e6821de30c55f6e32d37
+- 10.3389/fncir.2025.1611199 | kw=10 | cites=0 | Run-Zhe Ma, Frontiers in Neural Circuits, 2025
+  title: Localization and connections of the tail of caudate and caudal putamen in mouse brain
+  url: https://www.semanticscholar.org/paper/e7fb7817ab0a4174ce04208e89a0f9fbc348a416
+- 10.3389/fnagi.2025.1744413 | kw=10 | cites=0 | Daniela Ballotta, Frontiers in Aging Neuroscience, 2026
+  title: The olfactory functional network in the Alzheimer’s disease continuum: a resting state fMRI study
+  url: https://www.semanticscholar.org/paper/fb60b2dd2cb5c58549e9a79b014963f5a152e789
+- 10.1101/2025.08.28.672884 | kw=10 | cites=0 | Nooshin Safari, bioRxiv, 2025
+  title: Brain morphology network alterations in adolescents with autism spectrum disorder: a sex-stratified study
+  url: https://www.semanticscholar.org/paper/aa3ccdc25cba6f66cc67cc535fbbc5867b02437b
+- 10.1016/j.ynirp.2025.100279 | kw=10 | cites=0 | Mohammad Chaposhloo, Neuroimage: Reports, 2025
+  title: Unraveling trauma memory: Differential functional connectivity profiles of anterior and posterior hippocampus in post-traumatic stress disorder and its dissociative subtype
+  url: https://www.semanticscholar.org/paper/7c50af805fc8ee8e62a9cf978f2d12463de7eb41
+- 10.1016/j.pneurobio.2023.102447 | kw=9 | cites=10 | Anna Plachti, Progress in neurobiology, 2023
+  title: Hippocampal anterior- posterior shift in childhood and adolescence.
+  url: https://www.semanticscholar.org/paper/eaf69bd673d460a3e7d110de60c748d8005589da
+- 10.7554/eLife.97658 | kw=9 | cites=7 | Kristin Nordin, bioRxiv, 2025
+  title: Two long-axis dimensions of hippocampal-cortical integration support memory function across the adult lifespan
+  url: https://www.semanticscholar.org/paper/130e135c22af1db6e44affff64d909cf37993a5e
+- 10.1016/j.cobeha.2025.101560 | kw=9 | cites=2 | Brett L. Foster, Current Opinion in Behavioral Sciences, 2025
+  title: Functions of the posterior cingulate cortex and default network
+  url: https://www.semanticscholar.org/paper/607560f15fa7d808761b3a88cdca79c5fdf6e984
+- 10.9758/cpn.25.1289 | kw=9 | cites=0 | Dong-Gyun Han, Clinical Psychopharmacology and Neuroscience, 2025
+  title: Linking the Supplementary Motor Network and Executive Function in Developing Brain
+  url: https://www.semanticscholar.org/paper/d18b7ab0afc5486ad4a8d734c4e3dd079ba4cf93
+- 10.3389/fnhum.2025.1688296 | kw=9 | cites=0 | Yoonmi Hong, Frontiers in Human Neuroscience, 2025
+  title: Structural connectome gradients and their relationship to IQ in childhood
+  url: https://www.semanticscholar.org/paper/1a6e3c8a4a50f151805d9893634d543efc746527
+- 10.3389/fneur.2025.1666991 | kw=9 | cites=0 | Yingying Gao, Frontiers in Neurology, 2025
+  title: Assessment of functional decline in stroke patients using 3D deep learning and dynamic functional connectivity based on resting-state fMRI
+  url: https://www.semanticscholar.org/paper/b75814dcbd90b9405f178c7fa0d42da12e941b90
+- 10.17816/morph.690578 | kw=9 | cites=0 | T. Tsekhmistrenko, Morphology, 2026
+  title: Morphofunctional organization of the temporo-parietal-occipital subarea of the human cerebral cortex
+  url: https://www.semanticscholar.org/paper/0699d48ce039d56fe0f6e0ad39e0ba88bb309826
+- 10.1038/s41598-026-35415-7 | kw=9 | cites=0 | Shidong Tan, Scientific Reports, 2026
+  title: Dynamic thalamocortical functional connectivity disruptions in Parkinson’s disease with probable REM sleep behavior disorder
+  url: https://www.semanticscholar.org/paper/e6138ddc9c627fbfeeab2fe683da688aebaeba51
+- 10.7554/eLife.76143 | kw=7 | cites=44 | M. Dalton, eLife, 2022
+  title: New insights into anatomical connectivity along the anterior–posterior axis of the human hippocampus using in vivo quantitative fibre tracking
+  url: https://www.semanticscholar.org/paper/0ee866d35fe49d6a00d626e5e32971ed4c16c7da
+  local_file: Dalton eLife 2022 longitudinal hippocampus.pdf
+- 10.1073/pnas.2422083122 | kw=6 | cites=15 | Peter A. Angeli, Proceedings of the National Academy of Sciences of the United States of America, 2025
+  title: Specialization of the human hippocampal long axis revisited
+  url: https://www.semanticscholar.org/paper/c1c6bb97bed2a87ec0b16b09a06fc7d638d847c1
+  local_file: 10.1073_pnas.2422083122.pdf
+- 10.1101/2023.08.08.552437 | kw=6 | cites=11 | Jingnan Du, bioRxiv, 2023
+  title: Within-Individual Organization of the Human Cerebral Cortex: Networks, Global Topography, and Function
+  url: https://www.semanticscholar.org/paper/7fee5874c02ffb9acc71ab7f7876addc33c0cd5e
+- 10.1038/s41598-023-35127-2 | kw=6 | cites=8 | Ian A. Clark, Scientific Reports, 2023
+  title: Posterior hippocampal CA2/3 volume is associated with autobiographical memory recall ability in lower performing individuals
+  url: https://www.semanticscholar.org/paper/cd1b1f20c646dea0be81881b4f1e8d6eebf75486
+- 10.1186/s12916-025-04218-4 | kw=6 | cites=2 | Jingda Cai, BMC Medicine, 2025
+  title: Metformin-improved cognitive impairment in patients with schizophrenia is correlated with activation of tricarboxylic acid cycle and restored functional connectivity of hippocampus
+  url: https://www.semanticscholar.org/paper/2ae69d41e8f889a5ad412080f0e0931166c8ad41
+- 10.3389/fnhum.2025.1509163 | kw=6 | cites=0 | A. Vorobiova, Frontiers in Human Neuroscience, 2025
+  title: Functional segregation of rostral and caudal hippocampus in associative memory
+  url: https://www.semanticscholar.org/paper/b0d73b812e47d5d0ddd657a492fdbcb331c810d9
+- 10.1038/s41586-024-07624-5 | kw=5 | cites=160 | J. Siegel, Nature, 2024
+  title: Psilocybin desynchronizes the human brain
+  url: https://www.semanticscholar.org/paper/ff78556828279bd5003feae78ff34b8d55dd9797
+- 10.1101/2023.08.22.23294131 | kw=5 | cites=11 | J. Siegel, medRxiv, 2023
+  title: Psilocybin desynchronizes brain networks
+  url: https://www.semanticscholar.org/paper/0e7ef2fccb16175b0930ae358440bdf5e6dd4016
+- 10.1126/sciadv.adp0453 | kw=4 | cites=19 | Donnisa Edmonds, Science Advances, 2024
+  title: The human social cognitive network contains multiple regions within the amygdala
+  url: https://www.semanticscholar.org/paper/ecf7b618f4538ad1da583fb1ee2e1564c1e5e461
+- 10.1002/hbm.70321 | kw=4 | cites=0 | Huize Pang, Human Brain Mapping, 2025
+  title: Microstructural Changes in Aging Hippocampal Pathways: Insights From the HCP‐Aging Diffusion MRI Study
+  url: https://www.semanticscholar.org/paper/e0e5b2f374c200936b050d2538064037972cdc4c
+- 10.1186/s10194-024-01888-y | kw=3 | cites=8 | Igor Petrušić, The Journal of Headache and Pain, 2024
+  title: Subsegmentation of the hippocampus in subgroups of migraine with aura patients: advanced structural neuroimaging study
+  url: https://www.semanticscholar.org/paper/d8fedb09fcf10f1029e3b90c17df64322962bc05
+- 10.1038/s41597-023-02449-9 | kw=2 | cites=6 | Ian A. Clark, Scientific Data, 2023
+  title: Release of cognitive and multimodal MRI data including real-world tasks and hippocampal subfield segmentations
+  url: https://www.semanticscholar.org/paper/2ba39772613e34ceac338f395b5416ce2f1c70d9
+- 10.1073/pnas.2403015121 | kw=2 | cites=4 | Hua Xie, Proceedings of the National Academy of Sciences of the United States of America, 2024
+  title: Longitudinal hippocampal axis in large-scale cortical systems underlying development and episodic memory
+  url: https://www.semanticscholar.org/paper/7d46bfdc527aa9570011908be39fc1d15ee9037f
+- 10.1007/s11682-023-00818-x | kw=2 | cites=4 | J. Guerrero-Gonzalez, Brain Imaging and Behavior, 2023
+  title: Multi-modal MRI of hippocampal morphometry and connectivity after pediatric severe TBI
+  url: https://www.semanticscholar.org/paper/e7c369375cffd287a3445f3fe5fe6d26a9832bb1
+- thom epilepsy res 2012 hippocampal longitudinal sclerosis.pdf | kw=1 | cites=0 | Local PDF, Unknown Journal, n.d.
+  title: thom epilepsy res 2012 hippocampal longitudinal sclerosis
+  local_file: thom epilepsy res 2012 hippocampal longitudinal sclerosis.pdf
+- 1-s2.0-S1525505020308416-main.pdf | kw=0 | cites=0 | Local PDF, Unknown Journal, n.d.
+  title: 1-s2.0-S1525505020308416-main
+  local_file: 1-s2.0-S1525505020308416-main.pdf
+- 1-s2.0-S1388245719312398-main.pdf | kw=0 | cites=0 | Local PDF, Unknown Journal, n.d.
+  title: 1-s2.0-S1388245719312398-main
+  local_file: 1-s2.0-S1388245719312398-main.pdf
+- 1-s2.0-S1053811920302561-main.pdf | kw=0 | cites=0 | Local PDF, Unknown Journal, n.d.
+  title: 1-s2.0-S1053811920302561-main
+  local_file: 1-s2.0-S1053811920302561-main.pdf
+- 1-s2.0-S1053811917306420-main.pdf | kw=0 | cites=0 | Local PDF, Unknown Journal, n.d.
+  title: 1-s2.0-S1053811917306420-main
+  local_file: 1-s2.0-S1053811917306420-main.pdf
+========================================================================
+Question: What evidence exists for connectivity between the hippocampus and specific thalamic nuclei, including "anterior thalamus", "pulvinar", or "posterior thalamus" in humans?
+Run: 2026-03-07 13:16
+------------------------------------------------------------------------
+- [ozdemir2024highangularresolution | Ruhunur Özdemir, Neuroimage: Reports, Sep 2024, 2024 | DOI: 10.1016/j.ynirp.2024.100210] The study demonstrates connectivity between the anterior thalamus and the hippocampus through the cingulum bundle, providing evidence of a relationship between these structures.
+  Evidence: "The cingulum bundle fiber stream terminates in the EC as shown in different sections in B and C."
+- [ozdemir2024highangularresolution | Ruhunur Özdemir, Neuroimage: Reports, Sep 2024, 2024 | DOI: 10.1016/j.ynirp.2024.100210] The study shows a three-dimensional demonstration of dorsal connections from the anterior thalamus (ANT) to the hippocampus via the cingulum bundle, indicating a clear relationship.
+  Evidence: "A three-dimensional demonstration of dorsal connections of ANT to the hippocampus is shown in A. The cingulum bundle (containing ANT projections) was reconstructed using ROIs at PCC (blue), MCC (yellow), or ACC (orange)."
+
+Bibliography (used in this response):
+1. ozdemir2024highangularresolution | Ruhunur Özdemir, Neuroimage: Reports, Sep 2024, 2024 | DOI: 10.1016/j.ynirp.2024.100210
+
+UTILIZED PAPERS: 3
+- 10.1093/brain/awaf342 | kw=10 | cites=0 | Masaya Togo, Brain : a journal of neurology, 2025
+  title: Electrophysiological connections linking medial pulvinar, anterior nuclei of the thalamus and the hippocampus.
+  url: https://www.semanticscholar.org/paper/cd6c063692be915a4f93b3c7593b55eaf36b34c1
+- 10.1016/j.ynirp.2024.100210 | kw=9 | cites=1 | Ruhunur Özdemir, Neuroimage: Reports, 2024
+  title: High angular resolution diffusion-weighted imaging and higher order tractography of the white matter tracts in the anterior thalamic area: Insights into deep brain stimulation targeting
+  url: https://www.semanticscholar.org/paper/3c9aeb363d9ab63d225b8affd672c5a99fa84561
+- 10.1038/s41598-018-37905-9 | kw=4 | cites=110 | J. Maller, Scientific Reports, 2019
+  title: Revealing the Hippocampal Connectome through Super-Resolution 1150-Direction Diffusion MRI
+  url: https://www.semanticscholar.org/paper/5c57a663e9ada8cdef75dbf456ab04a8420ffa85
+  local_file: 10.1038_s41598-018-37905-9.pdf
+
+DOWNLOADED PAPERS: 58
+- 10.1093/brain/awaf342 | kw=10 | cites=0 | Masaya Togo, Brain : a journal of neurology, 2025
+  title: Electrophysiological connections linking medial pulvinar, anterior nuclei of the thalamus and the hippocampus.
+  url: https://www.semanticscholar.org/paper/cd6c063692be915a4f93b3c7593b55eaf36b34c1
+- 10.3389/fncir.2025.1575232 | kw=9 | cites=2 | Ge Zhu, Frontiers in Neural Circuits, 2025
+  title: Brain-wide connections of the parvicellular subdivision of the basolateral and basomedial amygdaloid nuclei in the rats
+  url: https://www.semanticscholar.org/paper/4fa2054273c6185468b7acb46da522e029810cba
+- 10.1016/j.ynirp.2024.100210 | kw=9 | cites=1 | Ruhunur Özdemir, Neuroimage: Reports, 2024
+  title: High angular resolution diffusion-weighted imaging and higher order tractography of the white matter tracts in the anterior thalamic area: Insights into deep brain stimulation targeting
+  url: https://www.semanticscholar.org/paper/3c9aeb363d9ab63d225b8affd672c5a99fa84561
+- 10.1523/JNEUROSCI.18-15-05938.1998 | kw=6 | cites=257 | G. Bowers, Journal of Neuroscience, 1998
+  title: Region-Specific Regulation of Glutamic Acid Decarboxylase (GAD) mRNA Expression in Central Stress Circuits
+  url: https://www.semanticscholar.org/paper/d59fa459d57a812ed856e61259fe4335906ac6de
+- 10.1038/s41598-023-29792-6 | kw=6 | cites=42 | Mayank A. Jog, Scientific Reports, 2023
+  title: Transcranial direct current stimulation (tDCS) in depression induces structural plasticity
+  url: https://www.semanticscholar.org/paper/e7f0f85358d69f6d6c08c7fd6599e37d794efac3
+- 10.1186/s12883-022-02757-4 | kw=6 | cites=7 | Ying Zhang, BMC Neurology, 2022
+  title: Brain structural and functional connectivity alterations are associated with fatigue in neuromyelitis optica spectrum disorder
+  url: https://www.semanticscholar.org/paper/72537ba0f04747be27e3023354d5fa9baca595c6
+- 10.1038/s41598-023-40966-0 | kw=6 | cites=7 | Dingrong Guo, Scientific Reports, 2023
+  title: Effects of prior knowledge on brain activation and functional connectivity during memory retrieval
+  url: https://www.semanticscholar.org/paper/ca817f7ae93fab5e6ba11ae2b8357cb1af4d1c7d
+- 10.1002/hbm.26212 | kw=6 | cites=2 | Yuchao Jiang, Human Brain Mapping, 2023
+  title: In vivo characterization of magnetic resonance imaging‐based T1w/T2w ratios reveals myelin‐related changes in temporal lobe epilepsy
+  url: https://www.semanticscholar.org/paper/d6104804441d29c3e5cb51c44d14e122c7881e81
+- 10.3344/kjp.25137 | kw=6 | cites=1 | Betina Franceschini Tocchetto, The Korean Journal of Pain, 2025
+  title: Major depressive disorder in fibromyalgia: novel insights from resting-state functional connectivity analysis
+  url: https://www.semanticscholar.org/paper/da7a92c3b415b36681a796b0d3e71becf0201412
+- 10.1038/s41598-025-15305-0 | kw=6 | cites=0 | Po-Chun Chu, Scientific Reports, 2025
+  title: Focused ultrasound suppresses pentylenetetrazol-induced epileptiform activity in rats and alters connectivity measured by functional MRI
+  url: https://www.semanticscholar.org/paper/48b69d54732cd3b1e02ace82d3fdb1e349dd7c18
+- 10.1007/s10548-023-00955-y | kw=5 | cites=70 | A. Kamali, Brain Topography, 2023
+  title: The Cortico-Limbo-Thalamo-Cortical Circuits: An Update to the Original Papez Circuit of the Human Limbic System
+  url: https://www.semanticscholar.org/paper/7f316afee02251e7af18658ed83b080e7e812a50
+- 10.1038/s41380-024-02768-2 | kw=5 | cites=20 | T. Langhammer, Molecular Psychiatry, 2024
+  title: Resting-state functional connectivity in anxiety disorders: a multicenter fMRI study
+  url: https://www.semanticscholar.org/paper/f9c1f931c43f74d35c892fffef15fa2bf1f1055d
+- 10.1186/s12906-024-04612-0 | kw=5 | cites=18 | Tongfei Jiang, BMC Complementary Medicine and Therapies, 2024
+  title: Acupuncture modulates emotional network resting-state functional connectivity in patients with insomnia disorder: a randomized controlled trial and fMRI study
+  url: https://www.semanticscholar.org/paper/0de37924e155b5427cd65adba4fd04c2504e4d8d
+- 10.1186/s12876-024-03124-y | kw=5 | cites=11 | Lin Wang, BMC Gastroenterology, 2024
+  title: Symptom effects and central mechanism of acupuncture in patients with functional gastrointestinal disorders: a systematic review based on fMRI studies
+  url: https://www.semanticscholar.org/paper/254958e171661cada7666c7d49985c4803b43977
+- 10.1186/s13063-022-06633-x | kw=5 | cites=6 | Guangxin Guo, Trials, 2021
+  title: Cerebral mechanism of Tuina analgesia in management of knee osteoarthritis using multimodal MRI: study protocol for a randomised controlled trial
+  url: https://www.semanticscholar.org/paper/51fbb83204364f0b04396c0f63b974b99e48caf6
+- 10.1101/2024.03.01.583039 | kw=5 | cites=5 | D. Subramanian, bioRxiv, 2024
+  title: Time Cells in the Retrosplenial Cortex
+  url: https://www.semanticscholar.org/paper/32bcc41db20ef3b0c837f3a3d8c0578e35348c56
+- 10.14581/jer.25004 | kw=5 | cites=4 | Young-Min Shon, Journal of Epilepsy Research, 2025
+  title: Deep Brain Stimulation Therapy for Drug-Resistant Epilepsy: Present and Future Perspectives
+  url: https://www.semanticscholar.org/paper/ab6a8267890507e95100aba4176335300019d182
+- 10.3389/fnins.2025.1571682 | kw=5 | cites=2 | S. Das, Frontiers in Neuroscience, 2025
+  title: Aberrant white matter and subcortical gray matter functional network connectivity associated with static and dynamic characteristics in subjects with temporal lobe epilepsy
+  url: https://www.semanticscholar.org/paper/649152aecc41ced90e4c63b8f8d0966b8a165f1c
+- 10.1186/s13073-025-01548-z | kw=5 | cites=2 | Haojie Chen, Genome Medicine, 2025
+  title: Polygenic risk for Alzheimer’s disease in healthy aging: age-related and APOE-driven effects on brain structures and cognition
+  url: https://www.semanticscholar.org/paper/0ef382286294aa1d291cee4a590427c70410f2c4
+- 10.1186/s11689-024-09566-5 | kw=5 | cites=2 | Yanglei Cheng, Journal of Neurodevelopmental Disorders, 2024
+  title: Altered individual-level morphological similarity network in children with growth hormone deficiency
+  url: https://www.semanticscholar.org/paper/a96d4672d3eb3d11670663a4d8b3a3ba3b989f1a
+- 10.3389/fnins.2024.1511183 | kw=5 | cites=1 | Junkai Wang, Frontiers in Neuroscience, 2025
+  title: Effects of acupuncture at the Taichong (LIV3) and Hegu (LI4) points on functional connectivity with the retrosplenial cortex in patients with Alzheimer’s disease
+  url: https://www.semanticscholar.org/paper/1dce00b84d64f9a68397b2de7ab631d726b73357
+- 10.1523/ENEURO.0447-23.2024 | kw=5 | cites=1 | C. M. Dillingham, eNeuro, 2024
+  title: Electrophysiological Properties of the Medial Mammillary Bodies across the Sleep–Wake Cycle
+  url: https://www.semanticscholar.org/paper/08c322b56b8bec5e98584b25c3eaf13f2882ed5a
+- 10.1016/j.bbih.2025.101002 | kw=5 | cites=1 | Virto-Farfan Hesed, Brain, behavior, & immunity - health, 2025
+  title: Psychoneuroimmunoendocrinological and neuroanatomical basis of suicidal behavior: potential therapeutic strategies with a focus on transcranial magnetic stimulation (TMS)
+  url: https://www.semanticscholar.org/paper/ef4380a1765b7cc83c3143f8252a7eef525bfda0
+- 10.21037/qims-2024-2572 | kw=5 | cites=0 | Xinyan Wu, Quantitative Imaging in Medicine and Surgery, 2025
+  title: Abnormal structural changes and disturbed functional connectivity in patients with Crohn’s disease and abdominal pain: a voxel-based morphometry and functional magnetic resonance imaging study
+  url: https://www.semanticscholar.org/paper/e0d076f251ae9c0a1d7492a55a9f3038b594a481
+- 10.1055/s-0044-1787761 | kw=5 | cites=0 | Kuppe Channappa Usha, Arquivos de Neuro-Psiquiatria, 2023
+  title: Regional-based static and dynamic alterations in Alzheimer disease: a longitudinal study
+  url: https://www.semanticscholar.org/paper/66521acaee6c1aa7c70d87a76dc959132e070bab
+- 10.1038/s41537-025-00719-6 | kw=5 | cites=0 | Ningzhi Gou, Schizophrenia, 2026
+  title: Peripheral inflammation mediates cognitive deficits in drug-naive schizophrenia through hippocampal-thalamo-visual circuitry dysfunction
+  url: https://www.semanticscholar.org/paper/6481746cd762a72f1d5fef1a13a80993081a8504
+- 10.1038/s41467-022-32742-x | kw=5 | cites=0 | Fan Fei, Unknown Journal, 2022
+  title: Discrete subicular circuits control generalization of hippocampal seizures
+  url: https://www.semanticscholar.org/paper/7a84bb1337794589f3247b122034b881d582a053
+- 10.1016/j.heliyon.2024.e24725 | kw=5 | cites=0 | Yanmin Zheng, Heliyon, 2024
+  title: Functional dysconnectivity and microstructural impairment of the cortico-thalamo-cortical network in women with rheumatoid arthritis: A multimodal MRI study
+  url: https://www.semanticscholar.org/paper/fe8aa7a526fe3611f42aa77da0affbc6c347720e
+- 10.1038/s41598-018-37905-9 | kw=4 | cites=110 | J. Maller, Scientific Reports, 2019
+  title: Revealing the Hippocampal Connectome through Super-Resolution 1150-Direction Diffusion MRI
+  url: https://www.semanticscholar.org/paper/5c57a663e9ada8cdef75dbf456ab04a8420ffa85
+  local_file: 10.1038_s41598-018-37905-9.pdf
+- 10.1073/pnas.2316021121 | kw=4 | cites=10 | James R. Stieger, Proceedings of the National Academy of Sciences of the United States of America, 2024
+  title: Cross-regional coordination of activity in the human brain during autobiographical self-referential processing
+  url: https://www.semanticscholar.org/paper/f5f01de25eec741761c253fcd680da23b7c149be
+- 10.3389/fendo.2024.1420144 | kw=4 | cites=5 | Jessica L. Bradshaw, Frontiers in Endocrinology, 2024
+  title: Impact of sex and hypoxia on brain region-specific expression of membrane androgen receptor AR45 in rats
+  url: https://www.semanticscholar.org/paper/55c395bf599d39a26bbe1165367e7d04af2a6336
+- 10.1007/s11682-023-00818-x | kw=4 | cites=4 | J. Guerrero-Gonzalez, Brain Imaging and Behavior, 2023
+  title: Multi-modal MRI of hippocampal morphometry and connectivity after pediatric severe TBI
+  url: https://www.semanticscholar.org/paper/e7c369375cffd287a3445f3fe5fe6d26a9832bb1
+- 10.1101/2025.01.18.633747 | kw=4 | cites=0 | Kenichiro Negishi, bioRxiv, 2025
+  title: Elaborating the connections of a closed-loop forebrain circuit in the rat: Circumscribed evidence for novel topography within a cortico-striato-pallidal triple descending projection, with thalamic feedback, to the anterior lateral hypothalamic area
+  url: https://www.semanticscholar.org/paper/c0677e40a43aa8de2d213a8e56ef5ca29977819a
+- 10.1002/nep3.74 | kw=4 | cites=0 | Shannon M. Stuckey, Neuroprotection, 2025
+  title: Unravelling the nexus of stroke and dementia: Deciphering the role of secondary neurodegeneration in orchestrating cognitive decline
+  url: https://www.semanticscholar.org/paper/7024210d58f6fa377c83679f81da5a18f64790c2
+- 10.1002/trc2.12450 | kw=3 | cites=5 | B. Yuluğ, Alzheimer's & Dementia, 2024
+  title: The functional role of the pulvinar in discriminating between objective and subjective cognitive impairment in major depressive disorder
+  url: https://www.semanticscholar.org/paper/0897e26d0fd2faac57ff8d886ac1010d5a755c59
+- 10.1016/j.nicl.2024.103564 | kw=2 | cites=5 | C. A. Leonards, NeuroImage: Clinical, 2024
+  title: Altered task-related decoupling of the rostral anterior cingulate cortex in depression
+  url: https://www.semanticscholar.org/paper/b0a297443985f6841dcda994373434b6939f3d61
+- 10.1038/s41598-023-37834-2 | kw=2 | cites=4 | Tomotaka Ishizaki, Scientific Reports, 2023
+  title: Connectivity alteration in thalamic nuclei and default mode network-related area in memory processes in mesial temporal lobe epilepsy using magnetoencephalography
+  url: https://www.semanticscholar.org/paper/2ef610f48fae86e54da489a2d236c0109b7df0e4
+- 10.1016/j.neuroimage.2025.121125 | kw=2 | cites=2 | Madeline McCrea, NeuroImage, 2025
+  title: Mesoscale connectivity of the human hippocampus and fimbria revealed by ex vivo diffusion MRI
+  url: https://www.semanticscholar.org/paper/79777ca8de24cff8e34441ec7dc2e615e019ca61
+- 10.3389/fphys.2025.1634366 | kw=2 | cites=0 | Jiarui Wang, Frontiers in Physiology, 2025
+  title: Long-term effects of simulated microgravity in the central nervous system of rhesus monkeys: a voxel-wise multimodal MRI study
+  url: https://www.semanticscholar.org/paper/a6b59e0f6a79eebee6ce5dfaae6b7bc52a542008
+- 10.1007/s00415-025-13215-9 | kw=1 | cites=2 | Marco Michelutti, Journal of Neurology, 2025
+  title: Multiparametric MRI-based biomarkers in the non-fluent and semantic variants of primary progressive aphasia
+  url: https://www.semanticscholar.org/paper/37051169769aab58efc2976987628a5a7684dbbf
+- 10.7759/cureus.73184 | kw=1 | cites=0 | Hiroki Honda, Cureus, 2024
+  title: Hypoperfusion of the Left Insula, Operculum, and Putamen on Technetium-99m Ethyl Cysteinate Dimer (99mTc-ECD) Single-Photon Emission Computed Tomography in Patients With Mild Cognitive Impairment and Early Alzheimer's Disease
+  url: https://www.semanticscholar.org/paper/fa1f6c14248532aaad777022ef06e5eb0f62ccae
+- 10.1101/2024.12.31.630927 | kw=1 | cites=0 | Brooke R. Staveland, bioRxiv, 2025
+  title: Circuit dynamics of approach-avoidance conflict in humans
+  url: https://www.semanticscholar.org/paper/04100c05d98b5c741e4a1bbc028b7c4b155ba2bc
+- 10.1038/s41390-024-03105-7 | kw=0 | cites=28 | Tegan A. White, Pediatric Research, 2024
+  title: Perinatal compromise affects development, form, and function of the hippocampus part one; clinical studies
+  url: https://www.semanticscholar.org/paper/813133ce7ede877a22b6ba1f644749fea78e0142
+- 10.1016/j.nicl.2024.103584 | kw=0 | cites=17 | Kyle M. Jensen, NeuroImage: Clinical, 2024
+  title: A whole-brain neuromark resting-state fMRI analysis of first-episode and early psychosis: Evidence of aberrant cortical-subcortical-cerebellar functional circuitry
+  url: https://www.semanticscholar.org/paper/1517bdfb4f956b32dcf3bd4097bd0f716f8618fc
+- 10.1038/s41562-024-01855-2 | kw=0 | cites=11 | B. Attaallah, Nature Human Behaviour, 2024
+  title: The role of the human hippocampus in decision-making under uncertainty
+  url: https://www.semanticscholar.org/paper/3ab77a8bbae715b6a72789f47da2f27cf55192d5
+- 10.1038/s41386-024-01944-w | kw=0 | cites=5 | Lucas R Trambaiolli, bioRxiv, 2024
+  title: Translation of monosynaptic circuits underlying amygdala fMRI neurofeedback training
+  url: https://www.semanticscholar.org/paper/4e810595128bd7f378cc23205f52be5eb44411e7
+- 10.21203/rs.3.rs-3132332/v1 | kw=0 | cites=4 | S. Siddiqi, Research Square, 2024
+  title: A potential neuromodulation target for PTSD in Veterans derived from focal brain lesions
+  url: https://www.semanticscholar.org/paper/edaf2677937f2bd652ff8f23c2803c1a9c888276
+- 10.1111/jon.13237 | kw=0 | cites=4 | Omid Shoraka, Journal of Neuroimaging, 2024
+  title: Periaqueductal gray connectivity in spinal cord injury-induced neuropathic pain
+  url: https://www.semanticscholar.org/paper/19986e0238c96e8c2705ef62e6a01170d7c82921
+- 10.3389/fnhum.2024.1477049 | kw=0 | cites=3 | Yilin Liu, Frontiers in Human Neuroscience, 2024
+  title: Reproducible routes: reliably navigating the connectome to enrich personalized brain stimulation strategies
+  url: https://www.semanticscholar.org/paper/dd5b0108ccdf56d796f7988b46049ecf7970037e
+- 10.1002/alz.13808 | kw=0 | cites=2 | A. Heywood, Alzheimer's & Dementia, 2024
+  title: In vivo effect of LATE‐NC on integrity of white matter connections to the hippocampus
+  url: https://www.semanticscholar.org/paper/596a20f147fcc1a20508acba077b9fa81f18cfbe
+- 10.1016/j.nicl.2025.103908 | kw=0 | cites=1 | Jonathan M. Towne, NeuroImage: Clinical, 2025
+  title: Neuroimaging signatures of mesial temporal lobe epilepsy: A coordinate-based meta-analysis of structural and resting-state functional imaging literature
+  url: https://www.semanticscholar.org/paper/b0c24cf14710778a87ef8e43718dd9ebf75d6581
+- thom epilepsy res 2012 hippocampal longitudinal sclerosis.pdf | kw=0 | cites=0 | Local PDF, Unknown Journal, n.d.
+  title: thom epilepsy res 2012 hippocampal longitudinal sclerosis
+  local_file: thom epilepsy res 2012 hippocampal longitudinal sclerosis.pdf
+- awaf342 Togo Brain 2025.pdf | kw=0 | cites=0 | Local PDF, Unknown Journal, n.d.
+  title: awaf342 Togo Brain 2025
+  local_file: awaf342 Togo Brain 2025.pdf
+- 10.3389/fnagi.2025.1592678 | kw=0 | cites=0 | Yilin Liu, Frontiers in Aging Neuroscience, 2025
+  title: Advancing the modified face name associative memory exam in cognitive aging research: insights into connectomic correlates and task reliability
+  url: https://www.semanticscholar.org/paper/ce84e9957ebc1a68333016ce9535bce3844f44a1
+- 10.1038/s41598-026-35415-7 | kw=0 | cites=0 | Local PDF, Unknown Journal, n.d.
+  title: 10.1038 s41598-026-35415-7
+  local_file: 10.1038_s41598-026-35415-7.pdf
+- 10.1038/s41598-025-31725-4 | kw=0 | cites=0 | Local PDF, Unknown Journal, n.d.
+  title: 10.1038 s41598-025-31725-4
+  local_file: 10.1038_s41598-025-31725-4.pdf
+- 10.1007/s00406-025-02079-9 | kw=0 | cites=0 | Gina Brunner, European Archives of Psychiatry and Clinical Neuroscience, 2025
+  title: Altered functional connectivity of the hippocampus in cortico-subcortical networks in early-stage and emerging psychosis.
+  url: https://www.semanticscholar.org/paper/f668f24e37a3d4cad7beff4ac85f96708722142a
+- 10.1002/hbm.70321 | kw=0 | cites=0 | Huize Pang, Human Brain Mapping, 2025
+  title: Microstructural Changes in Aging Hippocampal Pathways: Insights From the HCP‐Aging Diffusion MRI Study
+  url: https://www.semanticscholar.org/paper/e0e5b2f374c200936b050d2538064037972cdc4c
+========================================================================
+Question: What studies using "single pulse electrical stimulation", "SPES", or "CCEP" have investigated effective connectivity of the "hippocampus" or specifically the "posterior hippocampus" in humans?
+Run: 2026-03-07 13:32
+------------------------------------------------------------------------
+- [10.1007 s10548-024-01084-w | Y. Novitskaya, Brain Topography, 2024 | DOI: 10.1007/s10548-024-01084-w] We investigated frequency-dependent directed functional connectivity among mesial and anterior temporal structures, including the hippocampus, in 19 epilepsy patients with normal anterior mesial temporal MR imaging. Intracranial EEG recordings were used to assess bidirectional functional connectivity, employing causality measures such as Granger causality, indicating effective connectivity within the hippocampal network.
+  Evidence: "To address this question, we investigated frequency-dependent directed functional connectivity among the structures of mesial and anterior temporal network including amygdala, hippocampus, temporal pole and parahippocam- pal gyrus in the living human brain. Intracranial EEG recording was obtained from 19 consecutive epilepsy patients with normal anterior mesial temporal MR imaging undergoing intracranial presurgical epilepsy diagnostics with multiple depth electrodes. We assessed intratemporal bidirectional functional connectivity using several causality measures such as Granger causality (..."
+
+Bibliography (used in this response):
+1. 10.1007 s10548-024-01084-w | Y. Novitskaya, Brain Topography, 2024 | DOI: 10.1007/s10548-024-01084-w
+
+UTILIZED PAPERS: 2
+- 10.1007/s10548-024-01084-w | kw=18 | cites=3 | Y. Novitskaya, Brain Topography, 2024
+  title: Intracranial EEG-Based Directed Functional Connectivity in Alpha to Gamma Frequency Range Reflects Local Circuits of the Human Mesiotemporal Network
+  url: https://www.semanticscholar.org/paper/b9b29ba9700748ad2a289fa38d633aa08d6ddd92
+- 10.1093/brain/awac300 | kw=0 | cites=80 | K. Gunnarsdottir, Brain : a journal of neurology, 2022
+  title: Source-sink connectivity: a novel interictal EEG marker for seizure localization.
+  url: https://www.semanticscholar.org/paper/d39abe51c647eada90531abda9fab553b368cb85
+  local_file: awac300 Gunnarsdottir Brain 2022.pdf
+
+DOWNLOADED PAPERS: 33
+- 10.1007/s10548-024-01084-w | kw=18 | cites=3 | Y. Novitskaya, Brain Topography, 2024
+  title: Intracranial EEG-Based Directed Functional Connectivity in Alpha to Gamma Frequency Range Reflects Local Circuits of the Human Mesiotemporal Network
+  url: https://www.semanticscholar.org/paper/b9b29ba9700748ad2a289fa38d633aa08d6ddd92
+- 10.1063/5.0250559 | kw=6 | cites=0 | Kai Cheng, APL Bioengineering, 2025
+  title: Machine learning-enabled detection of electrophysiological signatures in iPSC-derived models of schizophrenia and bipolar disorder
+  url: https://www.semanticscholar.org/paper/15b1f609b90e7e4440fa3d30941cb75a8fe95315
+  local_file: 10.1063_5.0250559.pdf
+- 10.64898/2026.02.03.26345480 | kw=4 | cites=0 | S. Panchavati, medRxiv, 2026
+  title: Distinct Spectral and Directional Thalamocortical Network Dynamics Define Focal Seizure Evolution
+  url: https://www.semanticscholar.org/paper/cd17076c51ca56ff1e9eaffdd849f7e09257face
+  local_file: 10.64898_2026.02.03.26345480.pdf
+- 10.1177/15357597241281842 | kw=4 | cites=0 | D. Englot, Epilepsy Currents, 2024
+  title: Chasing the Holy Grail: Seizure Prediction Through Neural Cycles
+  url: https://www.semanticscholar.org/paper/e4401d8da2ae0763984327675fb1e915dd2acbed
+  local_file: 10.1177_15357597241281842.pdf
+- 10.1002/epi4.70180 | kw=3 | cites=0 | Sina Sadeghzadeh, Epilepsia Open, 2025
+  title: sEEG‐guided responsive neurostimulation to treat neocortical epilepsy: A multicenter retrospective study of the efficacy and safety of depth electrode‐mediated neuromodulation
+  url: https://www.semanticscholar.org/paper/a10dac4a792b8ba525923059c0d67ae29cc35631
+- 10.3389/fnins.2025.1677898 | kw=1 | cites=2 | Wasi Ur Rehman Qamar, Frontiers in Neuroscience, 2025
+  title: Deep learning in intracranial EEG for seizure detection: advances, challenges, and clinical applications
+  url: https://www.semanticscholar.org/paper/1b64196c2094f0782d85c384a7d08937af0dc9cf
+- 10.3389/fnetp.2025.1539682 | kw=1 | cites=1 | Amirhossein Jahani, Frontiers in Network Physiology, 2025
+  title: Preictal connectivity dynamics: Exploring inflow and outflow in iEEG networks
+  url: https://www.semanticscholar.org/paper/d201bd40c4379ec5e1df2b90ccb33e058d750552
+- 10.1038/s41467-025-67740-2 | kw=1 | cites=1 | J. Royer, Nature Communications, 2025
+  title: Human cortical dynamics reflect graded contributions of local geometry and network topography
+  url: https://www.semanticscholar.org/paper/92886027641c1fffb25601342bca22e4c27eaa57
+- thom epilepsy res 2012 hippocampal longitudinal sclerosis.pdf | kw=1 | cites=0 | Local PDF, Unknown Journal, n.d.
+  title: thom epilepsy res 2012 hippocampal longitudinal sclerosis
+  local_file: thom epilepsy res 2012 hippocampal longitudinal sclerosis.pdf
+- 10.3389/fnetp.2025.1565882 | kw=1 | cites=0 | S. Roy, Frontiers in Network Physiology, 2025
+  title: Eigenvector biomarker for prediction of epileptogenic zones and surgical success from interictal data
+  url: https://www.semanticscholar.org/paper/48c15ce4d41ab387d819e3e0b62f911973fd52d8
+- 10.3389/fnetp.2024.1491967 | kw=1 | cites=0 | V. Boerwinkle, Frontiers in Network Physiology, 2025
+  title: Combining interictal intracranial EEG and fMRI to compute a dynamic resting-state index for surgical outcome validation
+  url: https://www.semanticscholar.org/paper/6558b8b3a509c02806d0b9f9256a99c271ee4acb
+- 10.1093/brain/awac300 | kw=0 | cites=80 | K. Gunnarsdottir, Brain : a journal of neurology, 2022
+  title: Source-sink connectivity: a novel interictal EEG marker for seizure localization.
+  url: https://www.semanticscholar.org/paper/d39abe51c647eada90531abda9fab553b368cb85
+  local_file: awac300 Gunnarsdottir Brain 2022.pdf
+- 10.1038/s41746-025-01531-3 | kw=0 | cites=9 | Hmayag Partamian, npj Digital Medicine, 2025
+  title: Machine learning on interictal intracranial EEG predicts surgical outcome in drug resistant epilepsy
+  url: https://www.semanticscholar.org/paper/f8384cd1a86577138caba628dbe3fc8c10324da3
+- 10.1002/epi4.70012 | kw=0 | cites=2 | Jacob Bunyamin, Epilepsia Open, 2025
+  title: Voxel‐based and surface‐based cortical morphometric MRI applications for identifying the epileptogenic zone: A narrative review
+  url: https://www.semanticscholar.org/paper/d684f6d033f0d1f93f602ea2ac2ac99db729db7e
+- 10.1002/ana.26256 | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+- 10.1101/2025.10.27.25338922 | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+- 10.1038/s41531-025-01136-3 | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+- 10.1101/2025.07.31.667730 | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+- 10.1038/s41467-025-59417-7 | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+- 10.1101/2025.04.07.647612 | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+- 10.1111/epi.18270 | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+- 10.1101/2025.03.11.642694 | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+- 10.1101/2024.12.22.627112 | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+- 10.1101/2024.11.11.622161 | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+- 10.1002/acn3.52179 | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+- 10.1038/s41467-024-51443-1 | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+- 10.1073/pnas.2316021121 | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+- PMCID:PMC11188014 | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+  doi: n/a
+- 10.1101/2024.03.03.24303480 | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+- 10.1101/2023.11.15.567302 | kw=0 | cites=0 | Unknown, Unknown Journal, n.d.
+- 10.1073/pnas.2510015122 | kw=0 | cites=0 | Xiyuan Jiang, Proceedings of the National Academy of Sciences of the United States of America, 2025
+  title: Mapping epileptogenic brain using a unified spatial–temporal–spectral source imaging framework
+  url: https://www.semanticscholar.org/paper/7b70a31e6adc91a77ab6feeef235cf610dcffd8f
+- 10.1038/s41598-025-24994-6 | kw=0 | cites=0 | S. Balaji, Scientific Reports, 2025
+  title: Seizure onset zone (SoZ) identification from interictal intracranial electroencephalogram
+  url: https://www.semanticscholar.org/paper/4ded959e7c67cc3a5ab1eb84f412d18ef0168895
+- 10.1038/s41386-025-02306-w | kw=0 | cites=0 | Thomas E. Valles, Neuropsychopharmacology, 2026
+  title: Differential neural responses to rhythmic and patterned TMS protocols: Insights from EEG spectral analysis.
+  url: https://www.semanticscholar.org/paper/dfe3ab1f3149b4ebee220d4aff6bbc3e64a2ed93
