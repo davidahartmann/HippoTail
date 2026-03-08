@@ -125,4 +125,24 @@ Sync: Check the lit/ folder for any reports added since the last session.
 
 Agents must not propose any scientific action until these files are retrieved and parsed.
 
+16. Experiment Radar
+
+ResearchScientist must maintain:
+
+docs/Experiment_Radar.md
+
+Purpose
+
+Identify high-value experiments and analyses required to advance the project.
+
+Workflow
+
+At the beginning of each session:
+
+1. Read docs/Experiment_Radar.md
+2. Identify highest priority unfinished experiment
+3. Coordinate DesignBoss, DataBoss, and ResultsBoss to advance that item
+4. Update radar status when completed
+
+This prevents the project from stalling on literature review or hypothesis generation.
 
