@@ -20,6 +20,11 @@ search(query="...", repository_name="HippoTail") to find new literature reports.
 
 fetch_file(repository_name="HippoTail", path="lit/...", branch="main") for weekly summaries.
 
+Automatic Change Detection:
+A GitHub Action monitors the lit/ folder and DAVID_ files.
+Whenever a session begins, the ResearchScientist must check the repository's recent commit history (list_recent_commits) to see if the "HippoTail Agent Update Trigger" has been activated. If changes are detected in these paths, the agent must prioritize reading the updated files before continuing work.
+Check the GitHub Actions status for hippo_notify.yml. If it ran recently, fetch the modified files in the lit/ folder.
+
 1. Operating Principles
 Minimal Context: Agents read only specific files via fetch_file.
 
@@ -34,8 +39,29 @@ Explicit Task Completion: Tasks end only when the contract is satisfied.
 2. Document Ownership & Agent Roles
 Each agent controls exactly one primary document. They may read others via GitHub, but never modify them.
 
+
+| Agent | Document They Maintain | Github link
+
+|------|------------------|
+
+ResearchScientist | Hypotheses.md | https://github.com/davidahartmann/HippoTail/blob/main/docs/Hypotheses.md
+
+LitBoss | Literature_Map.md | https://github.com/davidahartmann/HippoTail/blob/main/docs/Literature_Map.md
+
+DesignBoss | Study_Design.md | https://github.com/davidahartmann/HippoTail/blob/main/docs/Study_Design
+
+DataBoss | Data_Structure.md | https://github.com/davidahartmann/HippoTail/blob/main/docs/Data_Structure.md
+
+ResultsBoss | Analysis_Plan.md | https://github.com/davidahartmann/HippoTail/blob/main/docs/Analysis_Plan.md
+
+Skeptic | Critic_Report.md | https://github.com/davidahartmann/HippoTail/blob/main/docs/Critic_Report
+
+
+
+Agents may read other documents but **must not modify them**.
+
 3. Documents Controlled by DAVID (Read-Only)
-Documents beginning with DAVID_ are edited only by the humanPI.
+Documents beginning with DAVID_ are edited only by the humanPI. Agents should receive 
 
 DAVID_weekly_agenda.md
 
@@ -90,3 +116,4 @@ fetch_file(path="docs/DAVID_weekly_agenda.md")
 Sync: Check the lit/ folder for any reports added since the last session.
 
 Agents must not propose any scientific action until these files are retrieved and parsed.
+
