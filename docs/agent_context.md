@@ -1,7 +1,7 @@
 # HippoTail Agent Context
 
 This file is the master entry point for the HippoTail agent lab.
-
+Agents operate in a single coordinated session and communicate through GitHub documents rather than chat messages.
 Agents must read this file before loading any other repository documents.
 Read docs/agent_context.md and initialize the HippoTail agent lab.
 
