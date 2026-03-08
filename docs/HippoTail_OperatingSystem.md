@@ -9,7 +9,14 @@ Documentation: docs/ (e.g., docs/HippoTail_ProjectBible.md)
 
 Literature Reports: lit/ (e.g., lit/weekly_litReport_1026.txt)
 
-Research Logs: logs/
+Repository Structure Rule for the github repo:
+docs/      = knowledge
+lit/       = literature ingestion
+contracts/ = definition of analysis completion
+results/   = numerical outputs
+figures/   = visual outputs
+logs/      = persistent reasoning logs
+code/      = scripts and notebooks
 
 Mandatory Connector Actions:
 When fetching data, agents must prioritize these specific actions:
@@ -26,6 +33,7 @@ Whenever a session begins, the ResearchScientist must check the repository's rec
 Check the GitHub Actions status for hippo_notify.yml. If it ran recently, fetch the modified files in the lit/ folder.
 
 1. Operating Principles
+All agents: Read docs/agent_context.md and initialize the HippoTail agent lab.
 Minimal Context: Agents read only specific files via fetch_file.
 
 One Agent — One Document: Each agent owns one primary document.
@@ -116,4 +124,5 @@ fetch_file(path="docs/DAVID_weekly_agenda.md")
 Sync: Check the lit/ folder for any reports added since the last session.
 
 Agents must not propose any scientific action until these files are retrieved and parsed.
+
 
