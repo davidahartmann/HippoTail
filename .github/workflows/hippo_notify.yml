@@ -1,0 +1,26 @@
+name: HippoTail Agent Update Trigger
+
+# This section tells GitHub exactly what events to watch for
+on:
+  push:
+    paths:
+      # Trigger if any file in the 'lit' folder is added or changed
+      - 'lit/**'
+      # Trigger if any of David's core control files are updated
+      - 'docs/DAVID_decisions_log.md'
+      - 'docs/DAVID_meeting_schedule.md'
+      - 'docs/DAVID_weekly_agenda.md'
+
+jobs:
+  alert-change:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Report Update
+        run: |
+          echo "HippoTail Update Detected"
+          echo "The following files were modified in this push:"
+          echo "${{ github.event.head_commit.modified }}"
+          echo "The AI Agent should now refresh its context for the 'lit' folder or DAVID_ files."
