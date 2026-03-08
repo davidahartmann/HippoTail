@@ -2,122 +2,175 @@
 
 This file is the master entry point for the HippoTail agent lab.
 
-Agents must begin by reading only the files relevant to their task.
-Do not load the entire repository unless explicitly instructed.
+Agents must read this file before loading any other repository documents.
+
+Repository of record:
+davidahartmann/HippoTail
+
+Agents must access files through the GitHub connector using repository paths,
+not full URLs.
+
+Example:
+fetch_file(repository_name="HippoTail", path="docs/Hypotheses.md", branch="main")
+
+Agents must NOT assume files are loaded locally.
+
+Agents must read only the files required for their task.
 
 ---
 
-## Core startup files
+# Core Startup Procedure
 
-Read these first:
+Every agent must execute the following steps when starting:
 
-1. `docs/HippoTail_OperatingSystem.md`
-2. `docs/HippoTail_ProjectBible.md`
-3. `docs/DAVID_weekly_agenda.md`
+1. Confirm repository access to:
+   davidahartmann/HippoTail
+
+2. Load the core startup files:
+
+   docs/HippoTail_OperatingSystem.md
+   docs/HippoTail_ProjectBible.md
+   docs/DAVID_weekly_agenda.md
 
 These define:
+
 - project rules
 - scientific scope
 - current priorities
 
+Agents must not propose scientific work until these files are read.
+
 ---
 
-## Human-controlled files
+# Human-Controlled Files (Read Only)
 
-These files are edited only by David:
-
-- `docs/DAVID_weekly_agenda.md`
-- `docs/DAVID_meeting_schedule.md`
-- `docs/DAVID_decisions_log.md`
+The following files are edited only by the human PI.
 
 Agents may read them but must never modify them.
 
+docs/DAVID_weekly_agenda.md
+docs/DAVID_meeting_schedule.md
+docs/DAVID_decisions_log.md
+
+These files define the current priorities and decisions.
+
 ---
 
-## Agent-owned files
+# Agent-Owned Documents
+
+Each agent owns exactly one primary document.
+
+Agents may read other documents but must only modify their own.
 
 ResearchScientist maintains:
-- `docs/Hypotheses.md`
-- `docs/Weekly_Report.md`
-- `docs/PI_Briefing.md`
-- `docs/Research_Log.md`
+
+docs/Hypotheses.md  
+docs/Weekly_Report.md  
+docs/PI_Briefing.md  
+docs/Research_Log.md
 
 LitBoss maintains:
-- `docs/Literature_Map.md`
+
+docs/Literature_Map.md
 
 Skeptic maintains:
-- `docs/Critic_Report.md`
+
+docs/Critic_Report.md
 
 DesignBoss maintains:
-- `docs/Study_Design.md`
+
+docs/Study_Design.md
 
 DataBoss maintains:
-- `docs/Data_Structure.md`
+
+docs/Data_Structure.md
 
 ResultsBoss maintains:
-- `docs/Analysis_Plan.md`
+
+docs/Analysis_Plan.md
 
 ---
 
-## Literature ingestion
+# Literature Ingestion
 
 Weekly literature reports are stored in:
 
-- `lit/weekly_litReport_YYYYMMDD.txt`
-- `lit/weekly_litReport_YYYYMMDD.md`
+lit/
 
-LitBoss is responsible for:
-- ingesting these reports
-- updating `docs/Literature_Map.md`
-- writing literature findings and recommended next queries into `docs/Weekly_Report.md`
+File naming convention:
+
+weekly_litReport_YYYYMMDD.txt  
+weekly_litReport_YYYYMMDD.md
+
+LitBoss workflow:
+
+1. Search the repository for the newest literature report:
+
+   search(query="weekly_litReport", repository_name="HippoTail")
+
+2. Fetch the most recent file from the lit/ directory.
+
+3. Extract key findings.
+
+4. Update:
+
+   docs/Literature_Map.md
+
+5. Add literature findings and recommended next queries to:
+
+   docs/Weekly_Report.md
 
 ---
 
-## Contracts
+# Contracts
 
 Analysis completion is defined by files in:
 
-- `contracts/`
+contracts/
 
 Agents may not declare an analysis complete unless the relevant contract is satisfied.
 
 ---
 
-## Context discipline
+# Context Discipline
 
-Agents must load only what they need.
+Agents must load only the files required for their task.
 
-### Research tasks may read:
-- `docs/HippoTail_OperatingSystem.md`
-- `docs/HippoTail_ProjectBible.md`
-- `docs/DAVID_weekly_agenda.md`
-- `docs/Hypotheses.md`
-- `docs/Literature_Map.md`
-- `docs/Critic_Report.md`
+Research tasks may read:
 
-### Design tasks may read:
-- `docs/Study_Design.md`
-- `docs/Hypotheses.md`
-- `docs/Literature_Map.md`
-- `docs/Critic_Report.md`
+docs/HippoTail_OperatingSystem.md  
+docs/HippoTail_ProjectBible.md  
+docs/DAVID_weekly_agenda.md  
+docs/Hypotheses.md  
+docs/Literature_Map.md  
+docs/Critic_Report.md  
 
-### Data tasks may read:
-- `docs/Data_Structure.md`
-- `docs/Study_Design.md`
-- `docs/Analysis_Plan.md`
+Design tasks may read:
 
-### Analysis tasks may read:
-- `docs/Analysis_Plan.md`
-- `docs/Data_Structure.md`
-- relevant files in `contracts/`
-- relevant files in `results/`
-- relevant files in `figures/`
+docs/Study_Design.md  
+docs/Hypotheses.md  
+docs/Literature_Map.md  
+docs/Critic_Report.md  
+
+Data tasks may read:
+
+docs/Data_Structure.md  
+docs/Study_Design.md  
+docs/Analysis_Plan.md  
+
+Analysis tasks may read:
+
+docs/Analysis_Plan.md  
+docs/Data_Structure.md  
+contracts/  
+results/  
+figures/  
 
 Do not load unrelated files.
 
 ---
 
-## Mission
+# Mission
 
 The mission of the HippoTail agent lab is to:
 
