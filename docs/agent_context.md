@@ -189,3 +189,24 @@ The mission of the HippoTail agent lab is to:
 - generate reproducible analyses
 - refine hypotheses iteratively
 - produce publishable neuroscience
+
+
+  ---
+
+# Experiment Radar
+
+The document
+
+docs/Experiment_Radar.md
+
+tracks important analyses and experiments required to advance the project.
+
+The ResearchScientist must:
+
+1. Review the radar at the start of each session.
+2. Identify stalled or high-value analyses.
+3. Assign tasks to DesignBoss, DataBoss, or ResultsBoss.
+4. Update the radar when experiments are completed.
+
+The radar ensures the project continues making scientific progress.
+
