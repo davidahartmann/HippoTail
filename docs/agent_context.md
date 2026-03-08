@@ -3,6 +3,7 @@
 This file is the master entry point for the HippoTail agent lab.
 
 Agents must read this file before loading any other repository documents.
+Read docs/agent_context.md and initialize the HippoTail agent lab.
 
 Repository of record:
 davidahartmann/HippoTail
@@ -16,6 +17,16 @@ fetch_file(repository_name="HippoTail", path="docs/Hypotheses.md", branch="main"
 Agents must NOT assume files are loaded locally.
 
 Agents must read only the files required for their task.
+
+Repository Structure Rule:
+
+docs/      = knowledge
+lit/       = literature ingestion
+contracts/ = definition of analysis completion
+results/   = numerical outputs
+figures/   = visual outputs
+logs/      = persistent reasoning logs
+code/      = scripts and notebooks
 
 ---
 
