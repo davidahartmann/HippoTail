@@ -283,3 +283,36 @@ The mission of the HippoTail agent lab is to:
 - generate reproducible analyses
 - refine hypotheses iteratively
 - produce publishable neuroscience
+
+# Handoff-aware execution rule
+
+For any task that will be executed locally in Codex or MATLAB, agents must use the HippoTail handoff system defined in:
+
+`docs/HippoTail_OperatingSystem.md`
+
+and the repository folder:
+
+`handoffs/`
+
+Coding-adjacent agents must not assume that locally executed outputs are visible to cloud agents unless returned through:
+
+- `RETURN_<analysis_name>.md`
+- `run_manifest_<analysis_name>.json`
+- `outputs_manifest_<analysis_name>.csv`
+
+Agents should treat local execution as unverified until these return artifacts are available.
+
+# Role-specific handoff duties
+
+DesignBoss:
+- defines the scientific question and required outputs
+- contributes analysis specifications for `EXECUTE_<analysis_name>.md`
+
+DataBoss:
+- defines source tables, required columns, derivations, filters, and QC rules
+- contributes dataset and preprocessing sections for `EXECUTE_<analysis_name>.md`
+
+ResultsBoss:
+- assembles the final `EXECUTE_<analysis_name>.md`
+- writes or revises code in `code/`
+- interprets `RETURN_<analysis_name>.md` and manifests after local execution
