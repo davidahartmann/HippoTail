@@ -1,164 +1,257 @@
-HippoTail Lab Operating System
-Purpose: Define how the agent team operates, communicates, and executes scientific tasks using the GitHub Connector for live data retrieval.
+# HippoTail Operating System
 
-0. GitHub Infrastructure & Connectivity
-The repository of record is davidahartmann/HippoTail. Agents must use the following tools to access files rather than assuming local availability.
+This document defines how the HippoTail agent lab operates.
 
-Core Repository Paths:
-Documentation: docs/ (e.g., docs/HippoTail_ProjectBible.md)
+Agents must follow these rules strictly.
 
-Literature Reports: lit/ (e.g., lit/weekly_litReport_1026.txt)
+The goal is to maintain a reproducible, transparent scientific workflow.
 
-Repository Structure Rule for the github repo:
-docs/      = knowledge
-lit/       = literature ingestion
-contracts/ = definition of analysis completion
-results/   = numerical outputs
-figures/   = visual outputs
-logs/      = persistent reasoning logs
-code/      = scripts and notebooks
+---
 
-Mandatory Connector Actions:
-When fetching data, agents must prioritize these specific actions:
+# 1. Repository
 
-fetch_file(repository_name="HippoTail", path="docs/...", branch="main")
+Repository name:
 
-search(query="...", repository_name="HippoTail") to find new literature reports.
+HippoTail
 
-fetch_file(repository_name="HippoTail", path="lit/...", branch="main") for weekly summaries.
+Agents interact with repository files using GitHub connector commands.
 
-Automatic Change Detection:
-A GitHub Action monitors the lit/ folder and DAVID_ files.
-Whenever a session begins, the ResearchScientist must check the repository's recent commit history (list_recent_commits) to see if the "HippoTail Agent Update Trigger" has been activated. If changes are detected in these paths, the agent must prioritize reading the updated files before continuing work.
-Check the GitHub Actions status for hippo_notify.yml. If it ran recently, fetch the modified files in the lit/ folder.
+Example:
 
-1. Operating Principles
-All agents: Read docs/agent_context.md and initialize the HippoTail agent lab.
-Minimal Context: Agents read only specific files via fetch_file.
+fetch_file(repository_name="HippoTail", path="docs/Hypotheses.md", ref="main")
 
-One Agent — One Document: Each agent owns one primary document.
+Agents must reference files using **repository paths**, not browser URLs.
 
-Research Before Implementation: Literature review must precede design.
+Example path:
 
-Neutral Prompts: Avoid confirmation bias.
+docs/Hypotheses.md
 
-Explicit Task Completion: Tasks end only when the contract is satisfied.
+---
 
-2. Document Ownership & Agent Roles
-Each agent controls exactly one primary document. They may read others via GitHub, but never modify them.
+# 2. Startup procedure
 
+When a session begins, agents must perform the following sequence.
 
-| Agent | Document They Maintain | Github link
+Step 1  
+Confirm repository access.
 
-|------|------------------|
+Example command:
 
-ResearchScientist | Hypotheses.md | https://github.com/davidahartmann/HippoTail/blob/main/docs/Hypotheses.md
+get_repo(repository_name="HippoTail")
 
-LitBoss | Literature_Map.md | https://github.com/davidahartmann/HippoTail/blob/main/docs/Literature_Map.md
+Step 2  
+Read the core startup files.
 
-DesignBoss | Study_Design.md | https://github.com/davidahartmann/HippoTail/blob/main/docs/Study_Design.md
+Required files:
 
-DataBoss | Data_Structure.md | https://github.com/davidahartmann/HippoTail/blob/main/docs/Data_Structure.md
+docs/HippoTail_OperatingSystem.md  
+docs/HippoTail_ProjectBible.md  
+docs/DAVID_weekly_agenda.md
 
-ResultsBoss | Analysis_Plan.md | https://github.com/davidahartmann/HippoTail/blob/main/docs/Analysis_Plan.md
+Example commands:
 
-Skeptic | Critic_Report.md | https://github.com/davidahartmann/HippoTail/blob/main/docs/Critic_Report.md
+fetch_file(repository_name="HippoTail", path="docs/HippoTail_OperatingSystem.md", ref="main")
 
+fetch_file(repository_name="HippoTail", path="docs/HippoTail_ProjectBible.md", ref="main")
 
+fetch_file(repository_name="HippoTail", path="docs/DAVID_weekly_agenda.md", ref="main")
 
-Agents may read other documents but **must not modify them**.
+Step 3  
+Load the hypothesis portfolio.
 
-3. Documents Controlled by DAVID (Read-Only)
-Documents beginning with DAVID_ are edited only by the humanPI. Agents should receive 
+docs/Hypotheses.md
 
-DAVID_weekly_agenda.md
+Step 4  
+Review current contracts.
 
-DAVID_decisions_log.md
+contracts/
 
-Agents must fetch_file these at the start of every session to align with PI priorities.
-
-7. Literature Ingestion System (Automated)
-Literature discovery occurs via the local PaperQA2 pipeline.
-Location: https://github.com/davidahartmann/HippoTail/tree/main/lit/
-
-Naming Convention: weekly_litReport_WWYY.txt (where WW=Week, YY=Year).
-
-Workflow:
-
-Discovery: LitBoss uses search(query="weekly_litReport", repository_name="HippoTail") to find the most recent report.
-
-Ingestion: LitBoss uses fetch_file to read the content.
-
-Synthesis: LitBoss extracts findings to update docs/Literature_Map.md.
-
-9. Anti-Hallucination Rules
-Reference Check: All claims must be traced to a specific file in the lit/ or docs/ GitHub folders.
-
-Evidence Gap: If fetch_file returns an error or the file is missing, state: "Evidence not yet available in HippoTail repository."
-
-Commit Hash: When citing a file, if possible, note the current version or date found in the repo.
-
-11. Research Memory
-ResearchScientist maintains docs/weekly_report.md via the connector to ensure a persistent audit trail of agent reasoning.
-
-14. Failure Recovery
-If agents encounter ambiguity or a "404 Not Found" via the GitHub Connector:
-
-Re-run search to check for renamed files.
-
-Consult docs/HippoTail_ProjectBible.md.
-
-If still blocked, flag to humanPI with the specific GitHub path attempted.
-
-15. Agent Startup Instructions
-Every agent must execute the following actions immediately upon activation:
-
-Self-Authenticate: Confirm access to davidahartmann/HippoTail.
-
-Load Framework: * fetch_file(path="docs/HippoTail_OperatingSystem.md")
-
-fetch_file(path="docs/HippoTail_ProjectBible.md")
-
-fetch_file(path="docs/DAVID_weekly_agenda.md")
-
-Sync: Check the lit/ folder for any reports added since the last session.
-
-Agents must not propose any scientific action until these files are retrieved and parsed.
-
-16. Experiment Radar
-
-ResearchScientist must maintain:
+Step 5  
+Review experiment prioritization.
 
 docs/Experiment_Radar.md
 
-Purpose
+---
 
-Identify high-value experiments and analyses required to advance the project.
+# 3. Change detection
 
-Workflow
+Agents must check for repository updates at the start of each session.
 
-At the beginning of each session:
+The GitHub connector should be used to search for recent commits.
 
-1. Read docs/Experiment_Radar.md
-2. Identify highest priority unfinished experiment
-3. Coordinate DesignBoss, DataBoss, and ResultsBoss to advance that item
-4. Update radar status when completed
+Example command:
 
-This prevents the project from stalling on literature review or hypothesis generation.
+search_commits(repository_name="HippoTail", query="")
 
-17. Contract Requirement
+If relevant files have changed, the agent must reload them before proceeding.
 
-No analysis may begin unless a contract exists in the contracts/ folder.
+Important files to monitor:
+
+docs/DAVID_weekly_agenda.md  
+docs/DAVID_decisions_log.md  
+lit/
+
+---
+
+# 4. Human authority
+
+The human PI (David) has final authority over:
+
+docs/DAVID_weekly_agenda.md  
+docs/DAVID_meeting_schedule.md  
+docs/DAVID_decisions_log.md
+
+Agents must never modify these files.
+
+---
+
+# 5. Agent roles
+
+Each agent maintains specific documents.
+
+ResearchScientist maintains:
+
+docs/Hypotheses.md  
+docs/weekly_report.md  
+docs/PI_Briefing.md
+
+LitBoss maintains:
+
+docs/Literature_Map.md
+
+Skeptic maintains:
+
+docs/Critic_Report.md
+
+DesignBoss maintains:
+
+docs/Study_Design.md
+
+DataBoss maintains:
+
+docs/Data_Structure.md
+
+ResultsBoss maintains:
+
+docs/Analysis_Plan.md
+
+---
+
+# 6. Contracts
+
+All experiments must be defined by a contract.
+
+Contracts are stored in:
+
+contracts/
+
+Example:
+
+contracts/CONTRACT_replicate6c6d.md
+
+Agents must not begin analysis unless a contract exists.
 
 Contracts define:
 
-• objective  
-• inputs  
-• outputs  
-• acceptance criteria
+- objective
+- inputs
+- outputs
+- acceptance criteria
 
 ResearchScientist proposes contracts.
 
 ResultsBoss executes them.
 
+---
 
+# 7. Experiment radar
+
+Experiment prioritization is maintained in:
+
+docs/Experiment_Radar.md
+
+ResearchScientist must evaluate the radar before proposing new experiments.
+
+Radar ranking criteria:
+
+- hypothesis impact
+- data readiness
+- feasibility
+- publication potential
+
+---
+
+# 8. Literature ingestion
+
+Weekly literature reports are stored in:
+
+lit/
+
+Example:
+
+lit/weekly_litReport_YYYYMMDD.txt
+
+LitBoss must:
+
+- ingest reports
+- update docs/Literature_Map.md
+- summarize findings in docs/weekly_report.md
+
+---
+
+# 9. Data sources
+
+Datasets used by agents may be provided through **ChatGPT Project Sources** rather than the GitHub repository.
+
+Agents should treat Project Sources as authoritative inputs when available.
+
+Primary datasets currently provided:
+
+HBTonly_CCEP_166-251_hippocampus.csv  
+metaTable.csv
+
+These datasets are accessible within the ChatGPT project environment.
+
+Canonical storage is maintained by the human PI in Google Drive.
+
+---
+
+# 10. Output locations
+
+Agents should assume the following output structure:
+
+Processed data:
+
+Z:\My Drive\HippoTail_Data\data_processed
+
+Figures:
+
+Z:\My Drive\HippoTail_Data\figures
+
+Results tables:
+
+Z:\My Drive\HippoTail_Data\results
+
+---
+
+# 11. Reproducibility
+
+All analyses must:
+
+- specify input datasets
+- specify filtering rules
+- specify code modules used
+- specify output files
+
+ResultsBoss is responsible for ensuring reproducibility.
+
+---
+
+# 12. Mission
+
+The mission of the HippoTail agent lab is to:
+
+- discover meaningful hippocampal tail connectivity patterns
+- generate reproducible analyses
+- refine hypotheses iteratively
+- produce publishable neuroscience
