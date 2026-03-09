@@ -62,3 +62,63 @@ Every processed dataset must record:
 source file  
 analysis script  
 date generated
+
+# Data Locations
+
+Canonical storage root
+
+Z:\My Drive\HippoTail_Data
+
+Raw data
+
+Z:\My Drive\HippoTail_Data\data_raw
+
+Processed data
+
+Z:\My Drive\HippoTail_Data\data_processed
+
+Figures
+
+Z:\My Drive\HippoTail_Data\figures
+
+Results
+
+Z:\My Drive\HippoTail_Data\results
+
+## Current primary input files
+
+HBTonly_CCEP_166-251_hippocampus.csv
+metaTable.csv
+
+## Project-source copies for ChatGPT inspection
+
+The following files may also be attached as Project sources for direct
+inspection by agents in ChatGPT sessions:
+
+- HBTonly_CCEP_166-251_hippocampus.csv
+- metaTable.csv
+
+Agents should treat the Project-source copies as readable working inputs for
+schema inspection and planning, while treating the canonical Z:\ paths as the
+source of record for the lab.
+
+## Output policy
+
+Processed tables should be written to:
+
+Z:\My Drive\HippoTail_Data\data_processed
+
+Final result tables should be written to:
+
+Z:\My Drive\HippoTail_Data\results
+
+Figures should be written to:
+
+Z:\My Drive\HippoTail_Data\figures
+
+Every processed output must record:
+
+- source file(s)
+- script used
+- date generated
+- analyst/agent responsible
