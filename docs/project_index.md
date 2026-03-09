@@ -189,6 +189,11 @@ Purpose: exported figures for PI review and manuscript development
 github repo: `HippoTail/figures`  
 URL: `https://github.com/davidahartmann/HippoTail/tree/main/figures`
 
+## Handoffs
+Purpose: Agents online make code, Codex runs it to produce interpretable results
+github repo: `HippoTail/handoffs`  
+URL: `https://github.com/davidahartmann/HippoTail/tree/main/handoffs`
+
 ## Literature
 Purpose: literature reports and ingestion outputs  
 github repo: `HippoTail/lit`  
