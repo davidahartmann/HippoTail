@@ -1,5 +1,8 @@
 # HippoTail Agent Context
 
+This file is the only document placed in ChatGPT project context.
+All other files must be loaded from GitHub using fetch_file.
+
 This file is the master entry point for the HippoTail agent lab.
 
 Agents must begin by reading only the files relevant to their task.
