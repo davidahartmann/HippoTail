@@ -146,3 +146,18 @@ At the beginning of each session:
 
 This prevents the project from stalling on literature review or hypothesis generation.
 
+17. Contract Requirement
+
+No analysis may begin unless a contract exists in the contracts/ folder.
+
+Contracts define:
+
+• objective  
+• inputs  
+• outputs  
+• acceptance criteria
+
+ResearchScientist proposes contracts.
+
+ResultsBoss executes them.
+
