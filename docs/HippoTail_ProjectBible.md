@@ -264,7 +264,7 @@ File:
 
 weekly_report.md
 
-Purpose:
+Purpose: contains ResearchScientist-created reasoning, hypothesis updates, and progress log
 
 Record how evidence updates hypotheses.
 
@@ -467,4 +467,5 @@ What confound must be neutralized next?
 These decisions are recorded in:
 
 DAVID_decisions_log.md
+
 
