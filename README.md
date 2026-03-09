@@ -1,63 +1,274 @@
-Canonical entry point for agents:
-docs/PROJECT_INDEX.md
+# HippoTail
 
-FILE ACCESS ORDER
+HippoTail is a structured research repository designed to function as a **research operating system** for the HippoTail project.
+It organizes hypotheses, experimental contracts, code, results, and literature in a deterministic structure so that both humans and AI agents can navigate and contribute reliably.
 
-When accessing a repository document:
+---
 
-1. Try GitHub repository path first.
+# Repository Navigation
+
+Primary entry point for agents and contributors:
+
+**GitHub path**
+
+```
+docs/project_index.md
+```
+
+**Raw URL**
+
+```
+https://raw.githubusercontent.com/davidahartmann/HippoTail/main/docs/project_index.md
+```
+
+This file explains the structure of the repository and where each type of artifact should live.
+
+---
+
+# File Access Rule (for agents and tools)
+
+When retrieving any file in this repository, use the following order:
+
+### 1️⃣ Try GitHub path first
 
 Example:
+
+```
 docs/HippoTail_OperatingSystem.md
+```
 
-2. If repository path access fails,
-retrieve the file using the raw GitHub URL.
+### 2️⃣ If path access fails, use the raw GitHub URL
 
 Example:
+
+```
 https://raw.githubusercontent.com/davidahartmann/HippoTail/main/docs/HippoTail_OperatingSystem.md
+```
 
-3. If raw URL access fails,
-consult the README.md file which contains backup links
-to all major project documents.
+### 3️⃣ If retrieval still fails, consult this README
 
-The README serves as the final navigation fallback.
+The README contains navigation links for all major project documents.
 
-#.github/workflows has a YAML function to notify ResearchScientist of changes to lit or DAVID_ files
-https://github.com/davidahartmann/HippoTail/blob/main/.github/workflows/hippo_notify.yml
+---
 
-#code is where agents will upload the code they use and make in Codex (polished, functioning versions mostly). It starts pretty empty.
+# Core Project Documents
+
+### HippoTail Operating System
+
+GitHub path
+
+```
+docs/HippoTail_OperatingSystem.md
+```
+
+Raw URL
+
+```
+https://raw.githubusercontent.com/davidahartmann/HippoTail/main/docs/HippoTail_OperatingSystem.md
+```
+
+---
+
+### Project Bible
+
+GitHub path
+
+```
+docs/HippoTail_ProjectBible.md
+```
+
+Raw URL
+
+```
+https://raw.githubusercontent.com/davidahartmann/HippoTail/main/docs/HippoTail_ProjectBible.md
+```
+
+---
+
+### Hypotheses
+
+GitHub path
+
+```
+docs/Hypotheses.md
+```
+
+Raw URL
+
+```
+https://raw.githubusercontent.com/davidahartmann/HippoTail/main/docs/Hypotheses.md
+```
+
+---
+
+### Experiment Radar
+
+GitHub path
+
+```
+docs/Experiment_Radar.md
+```
+
+Raw URL
+
+```
+https://raw.githubusercontent.com/davidahartmann/HippoTail/main/docs/Experiment_Radar.md
+```
+
+---
+
+### Analysis Plan
+
+GitHub path
+
+```
+docs/Analysis_Plan.md
+```
+
+Raw URL
+
+```
+https://raw.githubusercontent.com/davidahartmann/HippoTail/main/docs/Analysis_Plan.md
+```
+
+---
+
+# PI Control Documents
+
+### Weekly Agenda
+
+GitHub path
+
+```
+docs/DAVID_weekly_agenda.md
+```
+
+Raw URL
+
+```
+https://raw.githubusercontent.com/davidahartmann/HippoTail/main/docs/DAVID_weekly_agenda.md
+```
+
+---
+
+### Decision Log
+
+GitHub path
+
+```
+docs/DAVID_decisions_log.md
+```
+
+Raw URL
+
+```
+https://raw.githubusercontent.com/davidahartmann/HippoTail/main/docs/DAVID_decisions_log.md
+```
+
+---
+
+### Meeting Schedule
+
+GitHub path
+
+```
+docs/DAVID_meeting_schedule.md
+```
+
+Raw URL
+
+```
+https://raw.githubusercontent.com/davidahartmann/HippoTail/main/docs/DAVID_meeting_schedule.md
+```
+
+---
+
+# Repository Structure
+
+```
+.github/        automation and workflow notifications
+code/           analysis code developed by agents and researchers
+contracts/      experiment completion contracts
+docs/           project brain and operating procedures
+figures/        visual outputs for review
+lit/            literature intelligence reports
+logs/           reasoning or execution logs
+results/        analysis outputs and statistical summaries
+```
+
+---
+
+# Code
+
+Generated code here will go into HippoTail/code
+Example module that contains previously published useful code that we will build on is here:
+
+Github path
+```
+code/Lyu/
+```
+Raw URL
 https://github.com/davidahartmann/HippoTail/tree/main/code
 
-#contracts is where project contracts are stored, mostly fleshed out by the ResearchScientist but initiated by the PI to help decide when a piece of analysis is complete.
-https://github.com/davidahartmann/HippoTail/blob/main/contracts/CONTRACT_HippoTail_contrasts.md
+Agents and contributors should place stable analysis code here.
+
+---
+
+# Contracts
+
+Contracts define when a piece of analysis is considered complete.
+
+Examples:
+Github path
+```
+contracts/CONTRACT_replicate6c6d.md
+contracts/CONTRACT_HippoTail_contrasts.md
+```
+Raw URL
 https://github.com/davidahartmann/HippoTail/blob/main/contracts/CONTRACT_replicate6c6d.md
+https://github.com/davidahartmann/HippoTail/blob/main/contracts/CONTRACT_HippoTail_contrasts.md
+---
 
-#docs is the folder where operating procedures for agents are located
-[Hippotail/docs](https://github.com/davidahartmann/HippoTail/tree/main/docs)
-https://github.com/davidahartmann/HippoTail/blob/main/docs/Analysis_Plan.md
-https://github.com/davidahartmann/HippoTail/blob/main/docs/Critic_Report.md
-https://github.com/davidahartmann/HippoTail/blob/main/docs/DAVID_decisions_log.md
-https://github.com/davidahartmann/HippoTail/blob/main/docs/DAVID_meeting_schedule.md
-https://github.com/davidahartmann/HippoTail/blob/main/docs/DAVID_weekly_agenda.md
-https://github.com/davidahartmann/HippoTail/blob/main/docs/Data_Structure.md
-https://github.com/davidahartmann/HippoTail/blob/main/docs/Experiment_Radar.md
-https://github.com/davidahartmann/HippoTail/blob/main/docs/HippoTail_OperatingSystem.md
-https://github.com/davidahartmann/HippoTail/blob/main/docs/HippoTail_ProjectBible.md
-https://github.com/davidahartmann/HippoTail/blob/main/docs/Hypotheses.md
-https://github.com/davidahartmann/HippoTail/blob/main/docs/Literature_Map.md
-https://github.com/davidahartmann/HippoTail/blob/main/docs/Study_Design.md
-https://github.com/davidahartmann/HippoTail/blob/main/docs/agent_context.md
-https://github.com/davidahartmann/HippoTail/blob/main/docs/weekly_report.md
-https://github.com/davidahartmann/HippoTail/blob/main/docs/PI_Briefing.md
+# Results
 
-#figures is where figures will be placed in some viewable format for PI to review the work and verify its accuracy
-https://github.com/davidahartmann/HippoTail/tree/main/figures
+Statistical outputs, tables, and interpretations of completed experiments.
 
-#lit is an example of a literature report from paperQA2, there will be more here weekly or more often
+```
+results/
+```
+https://github.com/davidahartmann/HippoTail/blob/main/results
+---
+
+# Figures
+
+Visual outputs generated during analysis.
+
+```
+figures/
+```
+https://github.com/davidahartmann/HippoTail/blob/main/figures
+---
+
+# Literature
+
+Automated literature reports.
+
+Example:
+
+```
+lit/weekly_litReport_1026.txt
+```
 https://github.com/davidahartmann/HippoTail/blob/main/lit/weekly_litReport_1026.txt
+---
 
-#logs is unclear how we are using it, but the agents and PI can put their reasoning in here in markdown files for decisions along the way
-https://github.com/davidahartmann/HippoTail/tree/main/logs
+# Logs
 
-#results is where important tables or statistics, and a narrative about each finding, will be created
-https://github.com/davidahartmann/HippoTail/tree/main/results
+Optional reasoning logs from agents and researchers.
+
+```
+logs/
+```
+https://github.com/davidahartmann/HippoTail/blob/main/logs
+
+
+---
