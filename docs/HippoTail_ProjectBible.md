@@ -262,7 +262,7 @@ Maintained by ResearchScientist.
 
 File:
 
-Research_Log.md
+weekly_report.md
 
 Purpose:
 
@@ -467,3 +467,4 @@ What confound must be neutralized next?
 These decisions are recorded in:
 
 DAVID_decisions_log.md
+
