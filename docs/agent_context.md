@@ -132,6 +132,21 @@ LitBoss workflow:
    docs/Weekly_Report.md
 
 ---
+# Data Access Rule
+
+DataBoss is responsible for tracking all dataset locations, input files,
+processed outputs, figures, and result tables.
+
+Agents must consult:
+
+docs/Data_Structure.md
+
+before proposing any data-dependent analysis.
+
+If a dataset is available both as a canonical local/Drive path and as a
+Project source, agents should use the Project source for direct inspection
+in ChatGPT and record the canonical path in docs/Data_Structure.md.
+---
 
 # Contracts
 
