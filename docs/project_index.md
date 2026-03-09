@@ -190,7 +190,7 @@ github repo: `HippoTail/figures`
 URL: `https://github.com/davidahartmann/HippoTail/tree/main/figures`
 
 ## Handoffs
-Purpose: Agents online make code, Codex runs it to produce interpretable results
+Purpose: structured cloud-to-local and local-to-cloud execution handoffs between ChatGPT agents and local Codex/MATLAB
 github repo: `HippoTail/handoffs`  
 URL: `https://github.com/davidahartmann/HippoTail/tree/main/handoffs`
 
@@ -246,11 +246,14 @@ Read:
 - `HippoTail/docs/Data_Structure.md`
 - `HippoTail/docs/Study_Design.md`
 - `HippoTail/docs/Analysis_Plan.md`
+- `HippoTail/handoffs`
 
 ## Analysis work
 Read:
 - `HippoTail/docs/Analysis_Plan.md`
 - `HippoTail/docs/Data_Structure.md`
+- `HippoTail/handoffs/EXECUTE_<analysis_name>.md'
+- `HippoTail/handoffs/RETURN_<analysis_name>.md'
 - relevant contract file(s)
 - `HippoTail/code`
 - `HippoTail/results`
