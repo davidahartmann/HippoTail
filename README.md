@@ -24,6 +24,7 @@ https://github.com/davidahartmann/HippoTail/blob/main/docs/Literature_Map.md
 https://github.com/davidahartmann/HippoTail/blob/main/docs/Study_Design.md
 https://github.com/davidahartmann/HippoTail/blob/main/docs/agent_context.md
 https://github.com/davidahartmann/HippoTail/blob/main/docs/weekly_report.md
+https://github.com/davidahartmann/HippoTail/blob/main/docs/PI_Briefing.md
 
 #figures is where figures will be placed in some viewable format for PI to review the work and verify its accuracy
 https://github.com/davidahartmann/HippoTail/tree/main/figures
