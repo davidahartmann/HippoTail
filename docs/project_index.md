@@ -1,232 +1,272 @@
 # HippoTail Project Index
 
-START HERE if you are an AI agent or contributor entering the HippoTail repository.
+This file is the stable navigation map for the HippoTail project.
 
-This document provides the deterministic navigation map for the project.
+It exists in two places:
+1. on GitHub in `docs/project_index.md`
+2. in ChatGPT project sources
 
----
-
-# File Access Rule
-
-When retrieving repository documents, follow this order:
-
-1️⃣ Use GitHub repository path
-
-Example
-
-```
-docs/HippoTail_OperatingSystem.md
-```
-
-2️⃣ If repository path access fails, use the raw GitHub URL
-
-Example
-
-```
-https://raw.githubusercontent.com/davidahartmann/HippoTail/main/docs/HippoTail_OperatingSystem.md
-```
-
-3️⃣ If retrieval fails again, consult the README for backup navigation.
+Its purpose is to reduce failures when agents try to access repository files.
 
 ---
 
-# Repository Layout
+# Primary access rule
 
-```
-.github/
-code/
-contracts/
-docs/
-figures/
-lit/
-logs/
-results/
-```
+Agents should use this order of access:
 
----
+1. **GitHub repo path first**
+   - preferred when GitHub connector tools are working
 
-# Core Project Documents
+2. **Direct GitHub URL second**
+   - use the URL listed for the file if connector-based file access fails
 
-Agents entering the system should read the following files in order.
+3. **Project source copy third**
+   - if this file or `agent_context.md` is available in ChatGPT project sources, use the uploaded copy as backup
+
+Agents should not stop after one failed retrieval method if a backup path exists in this index.
 
 ---
 
-## 1. HippoTail Operating System
+# Startup rule
 
-GitHub path
+For startup, ResearchScientist must read these first:
 
-```
-docs/HippoTail_OperatingSystem.md
-```
+1. `HippoTail/docs/HippoTail_OperatingSystem.md`
+2. `HippoTail/docs/HippoTail_ProjectBible.md`
+3. `HippoTail/docs/DAVID_weekly_agenda.md`
 
-Raw URL
+Then read, as needed:
 
-```
-https://raw.githubusercontent.com/davidahartmann/HippoTail/main/docs/HippoTail_OperatingSystem.md
-```
+4. `HippoTail/docs/Hypotheses.md`
+5. `HippoTail/contracts/CONTRACT_replicate6c6d.md`
+6. `HippoTail/contracts/CONTRACT_HippoTail_contrasts.md`
+7. `HippoTail/docs/Experiment_Radar.md`
 
-Defines the rules of the HippoTail research operating system.
-
----
-
-## 2. Project Bible
-
-GitHub path
-
-```
-docs/HippoTail_ProjectBible.md
-```
-
-Raw URL
-
-```
-https://raw.githubusercontent.com/davidahartmann/HippoTail/main/docs/HippoTail_ProjectBible.md
-```
-
-Defines the scientific vision and long-term goals of the project.
+If GitHub connector access fails, use the corresponding URL listed below.
 
 ---
 
-## 3. Weekly Agenda
+# Retrieval discipline
 
-GitHub path
+Agents must load only the files relevant to the current task.
 
-```
-docs/DAVID_weekly_agenda.md
-```
+Do not load the full repository unless explicitly instructed.
 
-Raw URL
-
-```
-https://raw.githubusercontent.com/davidahartmann/HippoTail/main/docs/DAVID_weekly_agenda.md
-```
-
-Contains the current priorities set by the PI.
+Prefer:
+- startup files first
+- contract files next
+- analysis/data/code files only when needed for execution
 
 ---
 
-## 4. Hypotheses
+# Root repository
 
-GitHub path
-
-```
-docs/Hypotheses.md
-```
-
-Raw URL
-
-```
-https://raw.githubusercontent.com/davidahartmann/HippoTail/main/docs/Hypotheses.md
-```
-
-Active hypotheses under investigation.
+Repository name: `HippoTail`  
+Repository URL: `https://github.com/davidahartmann/HippoTail`
 
 ---
 
-## 5. Experiment Radar
+# Core startup files
 
-GitHub path
+## Operating system
+github repo: `HippoTail/docs/HippoTail_OperatingSystem.md`  
+URL: `https://github.com/davidahartmann/HippoTail/blob/main/docs/HippoTail_OperatingSystem.md`
 
-```
-docs/Experiment_Radar.md
-```
+## Project bible
+github repo: `HippoTail/docs/HippoTail_ProjectBible.md`  
+URL: `https://github.com/davidahartmann/HippoTail/blob/main/docs/HippoTail_ProjectBible.md`
 
-Raw URL
-
-```
-https://raw.githubusercontent.com/davidahartmann/HippoTail/main/docs/Experiment_Radar.md
-```
-
-Tracks the current experiment portfolio.
+## Weekly agenda
+github repo: `HippoTail/docs/DAVID_weekly_agenda.md`  
+URL: `https://github.com/davidahartmann/HippoTail/blob/main/docs/DAVID_weekly_agenda.md`
 
 ---
 
-# Contract System
+# High-priority scientific files
 
-Experiment contracts define when an analysis is considered complete.
+## Hypotheses
+github repo: `HippoTail/docs/Hypotheses.md`  
+URL: `https://github.com/davidahartmann/HippoTail/blob/main/docs/Hypotheses.md`
 
-Directory
+## Experiment radar
+github repo: `HippoTail/docs/Experiment_Radar.md`  
+URL: `https://github.com/davidahartmann/HippoTail/blob/main/docs/Experiment_Radar.md`
 
-```
-contracts/
-```
+## Literature map
+github repo: `HippoTail/docs/Literature_Map.md`  
+URL: `https://github.com/davidahartmann/HippoTail/blob/main/docs/Literature_Map.md`
 
-Examples
+## Critic report
+github repo: `HippoTail/docs/Critic_Report.md`  
+URL: `https://github.com/davidahartmann/HippoTail/blob/main/docs/Critic_Report.md`
 
-```
-contracts/CONTRACT_replicate6c6d.md
-contracts/CONTRACT_HippoTail_contrasts.md
-```
+## Study design
+github repo: `HippoTail/docs/Study_Design.md`  
+URL: `https://github.com/davidahartmann/HippoTail/blob/main/docs/Study_Design.md`
 
----
+## Analysis plan
+github repo: `HippoTail/docs/Analysis_Plan.md`  
+URL: `https://github.com/davidahartmann/HippoTail/blob/main/docs/Analysis_Plan.md`
 
-# Code
+## Data structure
+github repo: `HippoTail/docs/Data_Structure.md`  
+URL: `https://github.com/davidahartmann/HippoTail/blob/main/docs/Data_Structure.md`
 
-Stable analysis code should be stored here.
+## Weekly report
+github repo: `HippoTail/docs/weekly_report.md`  
+URL: `https://github.com/davidahartmann/HippoTail/blob/main/docs/weekly_report.md`
 
-```
-code/
-```
+## Agent context
+github repo: `HippoTail/docs/agent_context.md`  
+URL: `https://github.com/davidahartmann/HippoTail/blob/main/docs/agent_context.md`
 
-Example module
-
-```
-code/Lyu/
-```
-
----
-
-# Results
-
-Analysis outputs and interpretations.
-
-```
-results/
-```
-
----
-
-# Figures
-
-Generated visual outputs.
-
-```
-figures/
-```
+## Project index
+github repo: `HippoTail/docs/project_index.md`  
+URL: `https://github.com/davidahartmann/HippoTail/blob/main/docs/project_index.md`
 
 ---
 
-# Literature Intelligence
+# Human-controlled files
 
-Automated literature reports.
+Agents may read but must not modify these.
 
-```
-lit/
-```
+## Decisions log
+github repo: `HippoTail/docs/DAVID_decisions_log.md`  
+URL: `https://github.com/davidahartmann/HippoTail/blob/main/docs/DAVID_decisions_log.md`
 
----
+## Meeting schedule
+github repo: `HippoTail/docs/DAVID_meeting_schedule.md`  
+URL: `https://github.com/davidahartmann/HippoTail/blob/main/docs/DAVID_meeting_schedule.md`
 
-# Logs
-
-Optional reasoning logs.
-
-```
-logs/
-```
+## Weekly agenda
+github repo: `HippoTail/docs/DAVID_weekly_agenda.md`  
+URL: `https://github.com/davidahartmann/HippoTail/blob/main/docs/DAVID_weekly_agenda.md`
 
 ---
 
-# Workflow Summary
+# Contracts
 
-Typical workflow
+Agents may not declare analysis complete unless contract acceptance criteria are satisfied.
 
-1. PI updates weekly agenda
-2. Agents review hypotheses and experiment radar
-3. Agents initiate or complete contracts
-4. Code is written in `/code`
-5. Results generated in `/results`
-6. Figures produced in `/figures`
-7. Weekly reports summarize findings
+## Replicate Lyu Fig 6C–6D
+github repo: `HippoTail/contracts/CONTRACT_replicate6c6d.md`  
+URL: `https://github.com/davidahartmann/HippoTail/blob/main/contracts/CONTRACT_replicate6c6d.md`
 
-```
-```
+## HippoTail contrasts
+github repo: `HippoTail/contracts/CONTRACT_HippoTail_contrasts.md`  
+URL: `https://github.com/davidahartmann/HippoTail/blob/main/contracts/CONTRACT_HippoTail_contrasts.md`
+
+---
+
+# Repository folders
+
+## Workflows
+Purpose: notification and automation  
+github repo: `HippoTail/.github/workflows`  
+URL: `https://github.com/davidahartmann/HippoTail/tree/main/.github/workflows`
+
+### hippo_notify workflow
+github repo: `HippoTail/.github/workflows/hippo_notify.yml`  
+URL: `https://github.com/davidahartmann/HippoTail/blob/main/.github/workflows/hippo_notify.yml`
+
+## Code
+Purpose: polished analysis code and reusable scripts  
+github repo: `HippoTail/code`  
+URL: `https://github.com/davidahartmann/HippoTail/tree/main/code`
+
+### Lyu code
+Purpose: publication code used for replication and adaptation  
+github repo: `HippoTail/code/Lyu`  
+URL: `https://github.com/davidahartmann/HippoTail/tree/main/code/Lyu`
+
+## Docs
+Purpose: operating procedures, plans, hypotheses, reports  
+github repo: `HippoTail/docs`  
+URL: `https://github.com/davidahartmann/HippoTail/tree/main/docs`
+
+## Figures
+Purpose: exported figures for PI review and manuscript development  
+github repo: `HippoTail/figures`  
+URL: `https://github.com/davidahartmann/HippoTail/tree/main/figures`
+
+## Literature
+Purpose: literature reports and ingestion outputs  
+github repo: `HippoTail/lit`  
+URL: `https://github.com/davidahartmann/HippoTail/tree/main/lit`
+
+### Example literature report
+github repo: `HippoTail/lit/weekly_litReport_1026.txt`  
+URL: `https://github.com/davidahartmann/HippoTail/blob/main/lit/weekly_litReport_1026.txt`
+
+## Logs
+Purpose: reasoning logs, decision traces, and process notes  
+github repo: `HippoTail/logs`  
+URL: `https://github.com/davidahartmann/HippoTail/tree/main/logs`
+
+## Results
+Purpose: tables, statistical outputs, and narrative findings  
+github repo: `HippoTail/results`  
+URL: `https://github.com/davidahartmann/HippoTail/tree/main/results`
+
+---
+
+# Task-to-file map
+
+## Startup / initialization
+Read:
+- `HippoTail/docs/HippoTail_OperatingSystem.md`
+- `HippoTail/docs/HippoTail_ProjectBible.md`
+- `HippoTail/docs/DAVID_weekly_agenda.md`
+- `HippoTail/docs/Hypotheses.md`
+- `HippoTail/docs/Experiment_Radar.md`
+- `HippoTail/contracts/CONTRACT_replicate6c6d.md`
+- `HippoTail/contracts/CONTRACT_HippoTail_contrasts.md`
+
+## Hypothesis work
+Read:
+- `HippoTail/docs/Hypotheses.md`
+- `HippoTail/docs/Literature_Map.md`
+- `HippoTail/docs/Critic_Report.md`
+- `HippoTail/docs/Experiment_Radar.md`
+
+## Design work
+Read:
+- `HippoTail/docs/Study_Design.md`
+- `HippoTail/docs/Hypotheses.md`
+- `HippoTail/docs/Literature_Map.md`
+- `HippoTail/docs/Critic_Report.md`
+
+## Data work
+Read:
+- `HippoTail/docs/Data_Structure.md`
+- `HippoTail/docs/Study_Design.md`
+- `HippoTail/docs/Analysis_Plan.md`
+
+## Analysis work
+Read:
+- `HippoTail/docs/Analysis_Plan.md`
+- `HippoTail/docs/Data_Structure.md`
+- relevant contract file(s)
+- `HippoTail/code`
+- `HippoTail/results`
+- `HippoTail/figures`
+
+---
+
+# Failure fallback rule
+
+If GitHub connector retrieval fails:
+
+1. retry once with the exact repo path from this index
+2. use the direct URL from this index
+3. if `agent_context.md` or `project_index.md` is present in project sources, continue using those source copies
+4. do not claim the file is unavailable until both repo path and direct URL have been attempted
+
+---
+
+# Notes for agents
+
+- Prefer GitHub repo paths first because they preserve repository structure.
+- Use URLs as backup, not as the first method.
+- Keep retrieval narrow and task-specific.
+- Use this file as the canonical navigation backup if GitHub access becomes unstable.
