@@ -1,47 +1,35 @@
 # HippoTail Agent Context
 
 This file is the master entry point for the HippoTail agent lab.
-Agents operate in a single coordinated session and communicate through GitHub documents rather than chat messages.
-Agents must read this file before loading any other repository documents.
-Read docs/agent_context.md and initialize the HippoTail agent lab.
 
-Repository of record:
-davidahartmann/HippoTail
-
-Agents must access files through the GitHub connector using repository paths,
-not full URLs.
-
-Example:
-fetch_file(repository_name="HippoTail", path="docs/Hypotheses.md", branch="main")
-
-Agents must NOT assume files are loaded locally.
-
-Agents must read only the files required for their task.
-
-Repository Structure Rule:
-
-docs/      = knowledge
-lit/       = literature ingestion
-contracts/ = definition of analysis completion
-results/   = numerical outputs
-figures/   = visual outputs
-logs/      = persistent reasoning logs
-code/      = scripts and notebooks
+Agents must begin by reading only the files relevant to their task.
+Do not load the entire repository unless explicitly instructed.
 
 ---
 
-# Core Startup Procedure
+# Repository
 
-Every agent must execute the following steps when starting:
+Repository name:
 
-1. Confirm repository access to:
-   davidahartmann/HippoTail
+HippoTail
 
-2. Load the core startup files:
+All repository files must be accessed using repository paths and the GitHub connector.
 
-https://github.com/davidahartmann/HippoTail/blob/main/docs/HippoTail_OperatingSystem.md
-docs/HippoTail_ProjectBible.md
-   docs/DAVID_weekly_agenda.md
+Example:
+
+fetch_file(repository_name="HippoTail", path="docs/Hypotheses.md", ref="main")
+
+Agents must not use GitHub browser URLs to access files.
+
+---
+
+# Core startup files
+
+Agents must read these first:
+
+docs/HippoTail_OperatingSystem.md  
+docs/HippoTail_ProjectBible.md  
+docs/DAVID_weekly_agenda.md
 
 These define:
 
@@ -49,36 +37,35 @@ These define:
 - scientific scope
 - current priorities
 
-Agents must not propose scientific work until these files are read.
+Example fetch commands:
+
+fetch_file(repository_name="HippoTail", path="docs/HippoTail_OperatingSystem.md", ref="main")
+
+fetch_file(repository_name="HippoTail", path="docs/HippoTail_ProjectBible.md", ref="main")
+
+fetch_file(repository_name="HippoTail", path="docs/DAVID_weekly_agenda.md", ref="main")
 
 ---
 
-# Human-Controlled Files (Read Only)
+# Human-controlled files
 
-The following files are edited only by the human PI.
+These files are edited only by the human PI (David):
 
-Agents may read them but must never modify them.
-
-docs/DAVID_weekly_agenda.md
-docs/DAVID_meeting_schedule.md
+docs/DAVID_weekly_agenda.md  
+docs/DAVID_meeting_schedule.md  
 docs/DAVID_decisions_log.md
 
-These files define the current priorities and decisions.
+Agents may read these files but must never modify them.
 
 ---
 
-# Agent-Owned Documents
-
-Each agent owns exactly one primary document.
-
-Agents may read other documents but must only modify their own.
+# Agent-owned files
 
 ResearchScientist maintains:
 
 docs/Hypotheses.md  
-docs/Weekly_Report.md  
+docs/weekly_report.md  
 docs/PI_Briefing.md  
-docs/Research_Log.md
 
 LitBoss maintains:
 
@@ -102,50 +89,19 @@ docs/Analysis_Plan.md
 
 ---
 
-# Literature Ingestion
+# Literature ingestion
 
 Weekly literature reports are stored in:
 
-lit/
+lit/weekly_litReport_YYYYMMDD.txt
 
-File naming convention:
+LitBoss responsibilities:
 
-weekly_litReport_YYYYMMDD.txt  
-weekly_litReport_YYYYMMDD.md
+- ingest new literature reports
+- update docs/Literature_Map.md
+- summarize relevant findings in docs/weekly_report.md
+- propose new literature queries if gaps are detected
 
-LitBoss workflow:
-
-1. Search the repository for the newest literature report:
-
-   search(query="weekly_litReport", repository_name="HippoTail")
-
-2. Fetch the most recent file from the lit/ directory.
-
-3. Extract key findings.
-
-4. Update:
-
-   docs/Literature_Map.md
-
-5. Add literature findings and recommended next queries to:
-
-   docs/Weekly_Report.md
-
----
-# Data Access Rule
-
-DataBoss is responsible for tracking all dataset locations, input files,
-processed outputs, figures, and result tables.
-
-Agents must consult:
-
-docs/Data_Structure.md
-
-before proposing any data-dependent analysis.
-
-If a dataset is available both as a canonical local/Drive path and as a
-Project source, agents should use the Project source for direct inspection
-in ChatGPT and record the canonical path in docs/Data_Structure.md.
 ---
 
 # Contracts
@@ -154,15 +110,37 @@ Analysis completion is defined by files in:
 
 contracts/
 
-Agents may not declare an analysis complete unless the relevant contract is satisfied.
+Key initial contracts:
+
+contracts/CONTRACT_replicate6c6d.md  
+contracts/CONTRACT_HippoTail_contrasts.md
+
+Agents may not declare an analysis complete unless the relevant contract acceptance criteria are satisfied.
 
 ---
 
-# Context Discipline
+# Experiment Radar
 
-Agents must load only the files required for their task.
+Experiment prioritization is managed in:
 
-Research tasks may read:
+docs/Experiment_Radar.md
+
+ResearchScientist must review the radar before proposing new experiments.
+
+The radar ranks experiments based on:
+
+- hypothesis impact
+- data readiness
+- feasibility
+- publication potential
+
+---
+
+# Context discipline
+
+Agents must load only what they need.
+
+## Research tasks may read
 
 docs/HippoTail_OperatingSystem.md  
 docs/HippoTail_ProjectBible.md  
@@ -170,29 +148,30 @@ docs/DAVID_weekly_agenda.md
 docs/Hypotheses.md  
 docs/Literature_Map.md  
 docs/Critic_Report.md  
+docs/Experiment_Radar.md
 
-Design tasks may read:
+## Design tasks may read
 
 docs/Study_Design.md  
 docs/Hypotheses.md  
 docs/Literature_Map.md  
-docs/Critic_Report.md  
+docs/Critic_Report.md
 
-Data tasks may read:
+## Data tasks may read
 
 docs/Data_Structure.md  
 docs/Study_Design.md  
-docs/Analysis_Plan.md  
+docs/Analysis_Plan.md
 
-Analysis tasks may read:
+## Analysis tasks may read
 
 docs/Analysis_Plan.md  
 docs/Data_Structure.md  
 contracts/  
 results/  
-figures/  
+figures/
 
-Do not load unrelated files.
+Agents should avoid loading unrelated documents.
 
 ---
 
@@ -204,24 +183,3 @@ The mission of the HippoTail agent lab is to:
 - generate reproducible analyses
 - refine hypotheses iteratively
 - produce publishable neuroscience
-
-
-  ---
-
-# Experiment Radar
-
-The document
-
-docs/Experiment_Radar.md
-
-tracks important analyses and experiments required to advance the project.
-
-The ResearchScientist must:
-
-1. Review the radar at the start of each session.
-2. Identify stalled or high-value analyses.
-3. Assign tasks to DesignBoss, DataBoss, or ResultsBoss.
-4. Update the radar when experiments are completed.
-
-The radar ensures the project continues making scientific progress.
-
