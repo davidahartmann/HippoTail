@@ -1,3 +1,6 @@
+Canonical entry point for agents:
+docs/PROJECT_INDEX.md
+
 #.github/workflows has a YAML function to notify ResearchScientist of changes to lit or DAVID_ files
 https://github.com/davidahartmann/HippoTail/blob/main/.github/workflows/hippo_notify.yml
 
