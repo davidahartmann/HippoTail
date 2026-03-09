@@ -39,8 +39,8 @@ Every agent must execute the following steps when starting:
 
 2. Load the core startup files:
 
-[docs/HippoTail_OperatingSystem.md](https://github.com/davidahartmann/HippoTail/blob/main/docs/HippoTail_OperatingSystem.md)
-   docs/HippoTail_ProjectBible.md
+https://github.com/davidahartmann/HippoTail/blob/main/docs/HippoTail_OperatingSystem.md
+docs/HippoTail_ProjectBible.md
    docs/DAVID_weekly_agenda.md
 
 These define:
