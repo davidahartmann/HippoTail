@@ -1,124 +1,137 @@
-# HippoTail — Data Structure
+# HippoTail Data Structure
 
-Maintained by: DataBoss  
-Last updated: 2026-03-07
+Maintained by: DataBoss
 
-This document defines the structure of datasets used in the HippoTail project.
-
----
-
-# Raw Data
-
-Location
-
-Google Drive
-
-"Z:\My Drive\HippoTail_Data\data_processed" OR
-"Z:\My Drive\HippoTail_Data\data_raw"
-
-Files
-
-"Z:\My Drive\HippoTail_Data\data_raw\metaTable.csv"
-"Z:\My Drive\HippoTail_Data\data_raw\HBTonly_CCEP_166-251_hippocampus.csv"
-
-Raw data must never be modified.
+This document describes the datasets used by the HippoTail project and their provenance.
 
 ---
 
-# Processed Data
+# 1. Primary datasets
 
-Location
+The primary datasets used for analysis are provided as **ChatGPT Project Sources**.
 
-HippoTail_Data/data_processed/
+These files are accessible to agents within the ChatGPT project environment.
 
-Examples
+Primary datasets:
 
-connectivity_matrix.csv  
-roi_mapping.csv  
-distance_matrix.csv
+HBTonly_CCEP_166-251_hippocampus.csv  
+metaTable.csv
+
+These files should be treated as the canonical working datasets for analysis.
 
 ---
 
-# Key Variables
+# 2. Canonical data storage
 
-subject
-sc1 (stimulating channel 1)
-sc2 (stimulating channel 2)
-rc1 (recording channel 1)
-rc2 (recording channel 2)
-JP_label_out (stimulating anatomic region)
-JP_label_in (recording anatomic region)
-Connectivity metric: peak_maxCor_clst1 (F1 statistic (R))
-Latency (time_maxCor_clst1, in ms)
-Euclidean distance (eudDist)
-MNI coordinates of stimulated electrode contact (MNIout_coord_1, MNIout_coord_2, MNIout_coord_3)
-MNI coordinates of recording electrode contact (MNIin_coord_1, MNIin_coord_2, MNIin_coord_3)
----
+The human PI maintains the full dataset archive in Google Drive.
 
-# Data Provenance
-
-Every processed dataset must record:
-
-source file  
-analysis script  
-date generated
-
-# Data Locations
-
-Canonical storage root
+Root location:
 
 Z:\My Drive\HippoTail_Data
 
-Raw data
+Subfolders:
+
+data_raw  
+data_processed  
+figures  
+results
+
+---
+
+# 3. Raw data
+
+Raw datasets are stored in:
 
 Z:\My Drive\HippoTail_Data\data_raw
 
-Processed data
-
-Z:\My Drive\HippoTail_Data\data_processed
-
-Figures
-
-Z:\My Drive\HippoTail_Data\figures
-
-Results
-
-Z:\My Drive\HippoTail_Data\results
-
-## Current primary input files
+Example raw dataset:
 
 HBTonly_CCEP_166-251_hippocampus.csv
+
+This file contains hippocampal CCEP responses for electrodes spanning hippocampal head, body, and tail.
+
+---
+
+# 4. Metadata tables
+
+Metadata describing electrodes and patients are stored in:
+
 metaTable.csv
 
-## Project-source copies for ChatGPT inspection
+This file contains:
 
-The following files may also be attached as Project sources for direct
-inspection by agents in ChatGPT sessions:
+- patient identifiers
+- electrode locations
+- ROI assignments
+- stimulation site metadata
 
-- HBTonly_CCEP_166-251_hippocampus.csv
-- metaTable.csv
+---
 
-Agents should treat the Project-source copies as readable working inputs for
-schema inspection and planning, while treating the canonical Z:\ paths as the
-source of record for the lab.
+# 5. Processed data
 
-## Output policy
-
-Processed tables should be written to:
+Derived datasets generated during analysis should be stored in:
 
 Z:\My Drive\HippoTail_Data\data_processed
 
-Final result tables should be written to:
+Examples:
 
-Z:\My Drive\HippoTail_Data\results
+contrast matrices  
+ROI connectivity tables  
+UMAP-filtered datasets
 
-Figures should be written to:
+---
+
+# 6. Figures
+
+Generated figures should be saved to:
 
 Z:\My Drive\HippoTail_Data\figures
 
-Every processed output must record:
+Examples:
 
-- source file(s)
-- script used
+contrast heatmaps  
+brain connectivity maps  
+replicated figures from Lyu et al.
+
+---
+
+# 7. Results tables
+
+Statistical outputs should be saved to:
+
+Z:\My Drive\HippoTail_Data\results
+
+Examples:
+
+contrast_statistics.csv  
+replicated_tableS2.csv  
+replicated_tableS3.csv
+
+---
+
+# 8. Data provenance requirements
+
+All derived outputs must record:
+
+- source dataset
+- filtering rules
+- analysis script used
 - date generated
-- analyst/agent responsible
+- responsible agent
+
+This ensures reproducibility.
+
+---
+
+# 9. Current project datasets
+
+Active datasets:
+
+HBTonly_CCEP_166-251_hippocampus.csv  
+metaTable.csv
+
+These datasets are used for:
+
+- hippocampal connectivity contrast analyses
+- head vs body vs tail comparisons
+- replication of Lyu et al. Fig 6C–6D
