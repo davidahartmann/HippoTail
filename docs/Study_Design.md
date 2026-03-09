@@ -7,19 +7,18 @@ This document defines the experimental and analytical design used to test HippoT
 
 ---
 
-# Dataset
+# Data Sources
 
-Source
+Primary datasets are attached to the HippoTail ChatGPT Project as Project Sources.
 
-Human stereo-EEG patients with CCEP stimulation.
+These files are available to agents through the ChatGPT environment and are not stored in the GitHub repository.
 
-Key dataset
+Primary datasets:
 
-"Z:\My Drive\HippoTail_Data\data_processed\HBTonly_CCEP_166-251_hippocampus.csv"
-
-Metadata
-
+HBTonly_CCEP_166-251_hippocampus.csv  
 metaTable.csv
+
+Agents should treat these files as the canonical working datasets.
 
 ---
 
