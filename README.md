@@ -1,287 +1,289 @@
 # HippoTail
 
-HippoTail is a structured research repository designed to function as a **research operating system** for the HippoTail project.
-It organizes hypotheses, experimental contracts, code, results, and literature in a deterministic structure so that both humans and AI agents can navigate and contribute reliably.
+HippoTail is a structured research repository designed to function as a research operating system for the HippoTail project.
+
+It organizes hypotheses, experimental contracts, code, results, handoffs, and literature in a deterministic structure so that both humans and AI agents can navigate and contribute reliably.
 
 ---
 
-# Repository Navigation
+## Repository Navigation
 
 Primary entry point for agents and contributors:
 
-**GitHub path**
+### GitHub path
 
-```
 docs/project_index.md
-```
 
-**Raw URL**
+### Raw URL
 
-```
 https://raw.githubusercontent.com/davidahartmann/HippoTail/main/docs/project_index.md
-```
 
 This file explains the structure of the repository and where each type of artifact should live.
 
 ---
 
-# File Access Rule (for agents and tools)
+## File Access Rule for Agents and Tools
 
 When retrieving any file in this repository, use the following order:
 
-### 1️⃣ Try GitHub path first
+### 1. Try GitHub path first
 
 Example:
 
-```
 docs/HippoTail_OperatingSystem.md
-```
 
-### 2️⃣ If path access fails, use the raw GitHub URL
+### 2. If path access fails, use the raw GitHub URL
 
 Example:
 
-```
 https://raw.githubusercontent.com/davidahartmann/HippoTail/main/docs/HippoTail_OperatingSystem.md
-```
 
-### 3️⃣ If retrieval still fails, consult this README
+### 3. If retrieval still fails, consult this README
 
-The README contains navigation links for all major project documents.
+The README contains navigation links for major project documents and folders.
 
 ---
 
-# Core Project Documents
+## Core Project Documents
 
 ### HippoTail Operating System
 
-GitHub path
-
-```
+GitHub path  
 docs/HippoTail_OperatingSystem.md
-```
 
-Raw URL
-
-```
+Raw URL  
 https://raw.githubusercontent.com/davidahartmann/HippoTail/main/docs/HippoTail_OperatingSystem.md
-```
 
 ---
 
 ### Project Bible
 
-GitHub path
-
-```
+GitHub path  
 docs/HippoTail_ProjectBible.md
-```
 
-Raw URL
-
-```
+Raw URL  
 https://raw.githubusercontent.com/davidahartmann/HippoTail/main/docs/HippoTail_ProjectBible.md
-```
 
 ---
 
 ### Hypotheses
 
-GitHub path
-
-```
+GitHub path  
 docs/Hypotheses.md
-```
 
-Raw URL
-
-```
+Raw URL  
 https://raw.githubusercontent.com/davidahartmann/HippoTail/main/docs/Hypotheses.md
-```
 
 ---
 
 ### Experiment Radar
 
-GitHub path
-
-```
+GitHub path  
 docs/Experiment_Radar.md
-```
 
-Raw URL
-
-```
+Raw URL  
 https://raw.githubusercontent.com/davidahartmann/HippoTail/main/docs/Experiment_Radar.md
-```
 
 ---
 
 ### Analysis Plan
 
-GitHub path
-
-```
+GitHub path  
 docs/Analysis_Plan.md
-```
 
-Raw URL
-
-```
+Raw URL  
 https://raw.githubusercontent.com/davidahartmann/HippoTail/main/docs/Analysis_Plan.md
-```
 
 ---
 
-# PI Control Documents
+### Study Design
+
+GitHub path  
+docs/Study_Design.md
+
+Raw URL  
+https://raw.githubusercontent.com/davidahartmann/HippoTail/main/docs/Study_Design.md
+
+---
+
+### Data Structure
+
+GitHub path  
+docs/Data_Structure.md
+
+Raw URL  
+https://raw.githubusercontent.com/davidahartmann/HippoTail/main/docs/Data_Structure.md
+
+---
+
+## PI Control Documents
 
 ### Weekly Agenda
 
-GitHub path
-
-```
+GitHub path  
 docs/DAVID_weekly_agenda.md
-```
 
-Raw URL
-
-```
+Raw URL  
 https://raw.githubusercontent.com/davidahartmann/HippoTail/main/docs/DAVID_weekly_agenda.md
-```
 
 ---
 
 ### Decision Log
 
-GitHub path
-
-```
+GitHub path  
 docs/DAVID_decisions_log.md
-```
 
-Raw URL
-
-```
+Raw URL  
 https://raw.githubusercontent.com/davidahartmann/HippoTail/main/docs/DAVID_decisions_log.md
-```
 
 ---
 
 ### Meeting Schedule
 
-GitHub path
-
-```
+GitHub path  
 docs/DAVID_meeting_schedule.md
-```
 
-Raw URL
-
-```
+Raw URL  
 https://raw.githubusercontent.com/davidahartmann/HippoTail/main/docs/DAVID_meeting_schedule.md
-```
 
 ---
 
-# Repository Structure
+## Repository Structure
 
-```
-.github/        automation and workflow notifications
-code/           analysis code developed by agents and researchers
-contracts/      experiment completion contracts
-docs/           project brain and operating procedures
-figures/        visual outputs for review
-lit/            literature intelligence reports
-logs/           reasoning or execution logs
-results/        analysis outputs and statistical summaries
-```
+.github/        automation and workflow notifications  
+code/           analysis code developed by agents and researchers  
+contracts/      experiment completion contracts  
+docs/           project brain and operating procedures  
+figures/        visual outputs for review  
+handoffs/       structured cloud-to-local and local-to-cloud execution handoffs  
+lit/            literature intelligence reports  
+logs/           reasoning or execution logs  
+results/        analysis outputs and statistical summaries  
 
 ---
 
-# Code
+## Code
 
-Generated code here will go into HippoTail/code
-Example module that contains previously published useful code that we will build on is here:
+Stable analysis code should be stored in:
 
-Github path
-```
-code/Lyu/
-```
-Raw URL
+code/
+
+Repository URL  
 https://github.com/davidahartmann/HippoTail/tree/main/code
 
-Agents and contributors should place stable analysis code here.
+Example module containing previously published useful code that this project may build on:
+
+code/Lyu/
+
+Agents and contributors should place stable reusable analysis code here.
 
 ---
 
-# Contracts
+## Contracts
 
 Contracts define when a piece of analysis is considered complete.
 
 Examples:
-Github path
-```
-contracts/CONTRACT_replicate6c6d.md
-contracts/CONTRACT_HippoTail_contrasts.md
-```
-Raw URL
-https://github.com/davidahartmann/HippoTail/blob/main/contracts/CONTRACT_replicate6c6d.md
-https://github.com/davidahartmann/HippoTail/blob/main/contracts/CONTRACT_HippoTail_contrasts.md
+
+contracts/CONTRACT_replicate6c6d.md  
+contracts/CONTRACT_HippoTail_contrasts.md  
+
+Example URLs
+
+https://github.com/davidahartmann/HippoTail/blob/main/contracts/CONTRACT_replicate6c6d.md  
+https://github.com/davidahartmann/HippoTail/blob/main/contracts/CONTRACT_HippoTail_contrasts.md  
 
 ---
 
-# Results
+## Results
 
 Statistical outputs, tables, and interpretations of completed experiments.
 
-```
 results/
-```
-https://github.com/davidahartmann/HippoTail/blob/main/results
+
+https://github.com/davidahartmann/HippoTail/tree/main/results
 
 ---
 
-# Figures
+## Figures
 
 Visual outputs generated during analysis.
 
-```
 figures/
-```
-https://github.com/davidahartmann/HippoTail/blob/main/figures
+
+https://github.com/davidahartmann/HippoTail/tree/main/figures
 
 ---
 
-# Handoffs
-Allows agents and codex to talk
+## Handoffs
 
-Github path
-```
-HippoTail/handoffs/
+Structured communication between cloud agents and local Codex execution.
 
-URL: https://github.com/davidahartmann/HippoTail/blob/main/handoffs
+This folder is the main bridge between:
 
+- ChatGPT cloud agents
+- local Codex execution
+- desktop MATLAB outputs
 
-# Literature
+Typical files include:
 
-Automated literature reports.
+EXECUTE_<analysis_name>.md  
+RETURN_<analysis_name>.md  
+run_manifest_<analysis_name>.json  
+outputs_manifest_<analysis_name>.csv  
+
+GitHub path
+
+handoffs/
+
+Repository URL
+
+https://github.com/davidahartmann/HippoTail/tree/main/handoffs
+
+---
+
+## Literature
+
+Automated literature reports and literature intelligence outputs.
 
 Example:
 
-```
 lit/weekly_litReport_1026.txt
-```
+
+Example URL
+
 https://github.com/davidahartmann/HippoTail/blob/main/lit/weekly_litReport_1026.txt
+
 ---
 
-# Logs
+## Logs
 
 Optional reasoning logs from agents and researchers.
 
-```
 logs/
-```
-https://github.com/davidahartmann/HippoTail/blob/main/logs
 
+https://github.com/davidahartmann/HippoTail/tree/main/logs
 
 ---
+
+## Working Principle
+
+HippoTail is designed as a hybrid cloud-local lab:
+
+- cloud agents read docs, reason about study design, propose analyses, and generate code
+- local Codex and desktop MATLAB execute analyses against the PI's actual file system and tools
+- GitHub stores the durable project memory, codebase, contracts, and handoff records
+
+When a task requires local execution, agents should use the operating system and the `handoffs/` folder to communicate clearly and reproducibly.
+
+---
+
+## Primary Rule for Agents
+
+Agents should begin with:
+
+1. docs/project_index.md  
+2. docs/HippoTail_OperatingSystem.md  
+3. other task-relevant files only  
+
+Agents should not load the entire repository unless explicitly instructed to do so.
