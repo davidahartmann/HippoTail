@@ -1,6 +1,27 @@
 Canonical entry point for agents:
 docs/PROJECT_INDEX.md
 
+FILE ACCESS ORDER
+
+When accessing a repository document:
+
+1. Try GitHub repository path first.
+
+Example:
+docs/HippoTail_OperatingSystem.md
+
+2. If repository path access fails,
+retrieve the file using the raw GitHub URL.
+
+Example:
+https://raw.githubusercontent.com/davidahartmann/HippoTail/main/docs/HippoTail_OperatingSystem.md
+
+3. If raw URL access fails,
+consult the README.md file which contains backup links
+to all major project documents.
+
+The README serves as the final navigation fallback.
+
 #.github/workflows has a YAML function to notify ResearchScientist of changes to lit or DAVID_ files
 https://github.com/davidahartmann/HippoTail/blob/main/.github/workflows/hippo_notify.yml
 
