@@ -56,13 +56,13 @@ ResearchScientist | Hypotheses.md | https://github.com/davidahartmann/HippoTail/
 
 LitBoss | Literature_Map.md | https://github.com/davidahartmann/HippoTail/blob/main/docs/Literature_Map.md
 
-DesignBoss | Study_Design.md | https://github.com/davidahartmann/HippoTail/blob/main/docs/Study_Design
+DesignBoss | Study_Design.md | https://github.com/davidahartmann/HippoTail/blob/main/docs/Study_Design.md
 
 DataBoss | Data_Structure.md | https://github.com/davidahartmann/HippoTail/blob/main/docs/Data_Structure.md
 
 ResultsBoss | Analysis_Plan.md | https://github.com/davidahartmann/HippoTail/blob/main/docs/Analysis_Plan.md
 
-Skeptic | Critic_Report.md | https://github.com/davidahartmann/HippoTail/blob/main/docs/Critic_Report
+Skeptic | Critic_Report.md | https://github.com/davidahartmann/HippoTail/blob/main/docs/Critic_Report.md
 
 
 
@@ -99,7 +99,7 @@ Evidence Gap: If fetch_file returns an error or the file is missing, state: "Evi
 Commit Hash: When citing a file, if possible, note the current version or date found in the repo.
 
 11. Research Memory
-ResearchScientist maintains docs/Research_Log.md via the connector to ensure a persistent audit trail of agent reasoning.
+ResearchScientist maintains docs/weekly_report.md via the connector to ensure a persistent audit trail of agent reasoning.
 
 14. Failure Recovery
 If agents encounter ambiguity or a "404 Not Found" via the GitHub Connector:
@@ -160,4 +160,5 @@ Contracts define:
 ResearchScientist proposes contracts.
 
 ResultsBoss executes them.
+
 
