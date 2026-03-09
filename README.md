@@ -227,6 +227,7 @@ contracts/CONTRACT_HippoTail_contrasts.md
 Raw URL
 https://github.com/davidahartmann/HippoTail/blob/main/contracts/CONTRACT_replicate6c6d.md
 https://github.com/davidahartmann/HippoTail/blob/main/contracts/CONTRACT_HippoTail_contrasts.md
+
 ---
 
 # Results
@@ -237,6 +238,7 @@ Statistical outputs, tables, and interpretations of completed experiments.
 results/
 ```
 https://github.com/davidahartmann/HippoTail/blob/main/results
+
 ---
 
 # Figures
@@ -247,7 +249,18 @@ Visual outputs generated during analysis.
 figures/
 ```
 https://github.com/davidahartmann/HippoTail/blob/main/figures
+
 ---
+
+# Handoffs
+Allows agents and codex to talk
+
+Github path
+```
+HippoTail/handoffs/
+
+URL: https://github.com/davidahartmann/HippoTail/blob/main/handoffs
+
 
 # Literature
 
