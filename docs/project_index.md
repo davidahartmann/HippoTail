@@ -252,8 +252,8 @@ Read:
 Read:
 - `HippoTail/docs/Analysis_Plan.md`
 - `HippoTail/docs/Data_Structure.md`
-- `HippoTail/handoffs/EXECUTE_<analysis_name>.md'
-- `HippoTail/handoffs/RETURN_<analysis_name>.md'
+- `HippoTail/handoffs/EXECUTE_<analysis_name>.md`
+- `HippoTail/handoffs/RETURN_<analysis_name>.md`
 - relevant contract file(s)
 - `HippoTail/code`
 - `HippoTail/results`
