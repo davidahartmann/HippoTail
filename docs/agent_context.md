@@ -44,28 +44,35 @@ Preferred example:
 
 ---
 
-# File retrieval rule
-Agents must use this order of retrieval during ChatGPT project runs:
+# Runtime-safe file retrieval rule
+
+During ChatGPT project runs, agents must assume that:
+
+- GitHub connector access may be unavailable
+- repository write access may be unavailable
+- only files present in project sources are guaranteed accessible
+
+Agents must use the following retrieval order:
 
 1. **Project source copy first**
-   - preferred method when files are already uploaded to project sources
-   - use uploaded copies directly when available
+   - preferred method
+   - use files already uploaded to ChatGPT project sources whenever available
 
 2. **`docs/project_index.md` second**
-   - if a needed file is not present in project sources, consult `docs/project_index.md` or `project_index.md` within the ChatGPT project sources
-   - use the direct URL listed there if URL access is available in the runtime
+   - if a required file is not present in project sources
+   - consult `docs/project_index.md`
+   - use the direct GitHub URL listed there if URL retrieval is supported in the runtime
 
-3. **GitHub repo path third**
-   - use exact repository paths with the GitHub connector only if a working connector tool is explicitly available in the current runtime
+3. **GitHub repository connector third**
+   - use repository path retrieval only if a working GitHub connector tool is explicitly available in the current runtime
 
 Agents must not declare a file unavailable until they have attempted:
+
 - project source retrieval
 - fallback retrieval using `docs/project_index.md`
-- GitHub connector retrieval only if the connector is actually available
-Agents must not declare a file unavailable until they have attempted:
-- exact GitHub repo path retrieval
-- fallback retrieval using `docs/project_index.md`
+- GitHub connector retrieval **only if the connector tool is available**
 
+If GitHub access is unavailable but the required file exists in project sources, agents must continue the task using the project-source copy.
 ---
 
 # Core startup files
