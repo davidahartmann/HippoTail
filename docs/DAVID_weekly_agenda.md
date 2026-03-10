@@ -1,12 +1,19 @@
 # HippoTail — Weekly Agenda
 Owner: David
-Last updated: 2026-03-06
+Last updated: 2026-03-09
 
 This document defines the current priorities for the HippoTail project.
 
 Agents must read this file before beginning work.
 
 ---
+#Template for meetings per Zou, Nature 2025
+Agenda
+Questions to answer
+Rules
+Prior summaries
+Contexts
+Required output
 
 # Current Focus
 
@@ -20,7 +27,7 @@ H2 — Stronger connections (tail>head) to posterior thalamus and posterior medi
 
 ---
 
-# Main Objective This Week
+# Main Agenda This Week
 
 Generate the **first preliminary hippocampal connectivity maps** using existing CCEP data.
 
@@ -42,7 +49,7 @@ Goals
 
 ---
 
-# Current Constraints
+# Current Constraints/Rules
 
 Dataset limitations
 
@@ -55,6 +62,13 @@ Analysis constraints
 - Must account for Euclidean distance
 - Must test ipsilateral connections first
 
+Rules
+
+-ResearchScientist instructs other agents
+-no hallucinations
+-keep track of input and output code to Matlab in handoffs as defined in agent_context
+-use R and Matlab for final data analyses
+
 ---
 
 # Priority Tasks
@@ -64,6 +78,12 @@ Analysis constraints
 3. Produce first visualization of connectivity patterns with UMAP_act=1, UMAP_act=0 or 1; same for WM=0 or 1, and for strictly WM=0 (not touching white matter)
 
 ---
+# Required output
+- recreate brain heatmap from Lyu, et al. Fig 6c, 6d that contrasts posterior, mid, anterior thalamus connections with the brain
+- recreate table S2, table S3 from Lyu, et al. supplementary material
+- adapt that heatmap to produce png brain heatmaps and contrast maps for hipocampl head, body, tail
+- table comparing connectivity between head, body, tail of hippocampus with proper selection criteria (n=X patients, Y electrodes contacts) using lme4 statistics
+
 
 # Decisions Required From David
 
@@ -84,3 +104,4 @@ Keep the analysis simple for the first pass.
 The goal this week is **visual intuition**, not perfect statistics.
 
 Avoid overcomplicating the pipeline until we first validate the Lyu, et al. results and prove we have the code working well. After initial maps exist and we re-create her results, we will be ready to visualize head/body/tail connections, and differential connections, with heatmaps.
+
