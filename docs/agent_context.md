@@ -11,6 +11,7 @@ Its role is to tell agents:
 - which files to load first
 - which files belong to which roles
 - how to retrieve files reliably
+- how cloud agents interface with local Codex and MATLAB execution
 
 Agents must begin by reading only the files relevant to their task.
 Do not load the entire repository unless explicitly instructed.
@@ -203,6 +204,70 @@ The radar ranks experiments based on:
 
 ---
 
+# Handoff-aware execution rule
+
+HippoTail operates as a hybrid cloud-local lab.
+
+For any task that will be executed locally in Codex, MATLAB, or other desktop tools, agents must follow the handoff system defined in:
+
+`docs/HippoTail_OperatingSystem.md`
+
+and use the repository folder:
+
+`handoffs/`
+
+Cloud agents must not assume that locally executed outputs are visible or interpretable unless those outputs are explicitly returned through the handoff system.
+
+Agents should treat local execution as **unverified** until return artifacts are available.
+
+---
+
+# Required handoff artifacts
+
+For any locally executed analysis, the following files are the standard bridge between cloud agents and local Codex execution:
+
+- `EXECUTE_<analysis_name>.md`
+- `RETURN_<analysis_name>.md`
+
+Whenever feasible, local execution should also produce:
+
+- `run_manifest_<analysis_name>.json`
+- `outputs_manifest_<analysis_name>.csv`
+
+These files belong in:
+
+`handoffs/`
+
+---
+
+# Role-specific handoff duties
+
+DesignBoss:
+- defines the scientific question and required outputs
+- defines cohort and exclusion logic
+- defines predictors, covariates, controls, outcomes, and required plots
+- contributes analysis specifications for `EXECUTE_<analysis_name>.md`
+
+DataBoss:
+- defines source tables and required columns
+- defines joins, filters, reshaping, derivations, and QC rules
+- defines missingness handling and dataset assumptions that must be checked
+- contributes dataset and preprocessing sections for `EXECUTE_<analysis_name>.md`
+
+ResultsBoss:
+- is the primary coding and execution-facing analysis lead
+- assembles the final `EXECUTE_<analysis_name>.md`
+- writes or revises reusable code in `code/`
+- specifies expected inputs, outputs, validation checks, and reproducibility notes
+- interprets `RETURN_<analysis_name>.md` and manifest files after local execution
+- treats local execution as provisional until return artifacts are available
+
+ResearchScientist:
+- reviews returned results from local execution
+- updates hypotheses, priorities, and next-step experiment strategy based on verified outputs
+
+---
+
 # Context discipline
 
 Agents must load only what they need.
@@ -215,20 +280,23 @@ Agents must load only what they need.
 `docs/Hypotheses.md`  
 `docs/Literature_Map.md`  
 `docs/Critic_Report.md`  
-`docs/Experiment_Radar.md`
+`docs/Experiment_Radar.md`  
+`handoffs/`  
 
 ## Design tasks may read
 
 `docs/Study_Design.md`  
 `docs/Hypotheses.md`  
 `docs/Literature_Map.md`  
-`docs/Critic_Report.md`
+`docs/Critic_Report.md`  
+`handoffs/`
 
 ## Data tasks may read
 
 `docs/Data_Structure.md`  
 `docs/Study_Design.md`  
-`docs/Analysis_Plan.md`
+`docs/Analysis_Plan.md`  
+`handoffs/`
 
 ## Analysis tasks may read
 
@@ -237,9 +305,36 @@ Agents must load only what they need.
 `contracts/`  
 `results/`  
 `figures/`  
-`code/`
+`code/`  
+`handoffs/`
+
+## Analysis tasks may write or update
+
+`code/`  
+`handoffs/`  
+`docs/Analysis_Plan.md`  
+`results/`
 
 Agents should avoid loading unrelated documents.
+
+Agents should not treat local execution as complete unless the relevant handoff return artifacts are present in `handoffs/` or have otherwise been returned into the ChatGPT project context.
+
+---
+
+# Default cloud-to-local execution loop
+
+1. DesignBoss defines the analysis question and required outputs.
+2. DataBoss defines the source tables, preprocessing logic, and QC rules.
+3. ResultsBoss writes the executable handoff packet:
+   - `EXECUTE_<analysis_name>.md`
+   - associated code in `code/`
+4. The human PI transfers the packet to local Codex.
+5. Local Codex executes using desktop MATLAB and local data access.
+6. Local Codex returns:
+   - `RETURN_<analysis_name>.md`
+   - `run_manifest_<analysis_name>.json`
+   - `outputs_manifest_<analysis_name>.csv`
+7. ResultsBoss and ResearchScientist interpret the returned outputs and update project documents.
 
 ---
 
@@ -250,6 +345,7 @@ Agents should avoid loading unrelated documents.
 - what to read first
 - how roles are divided
 - how to behave
+- how to interface with local execution through the handoff system
 
 `docs/project_index.md` tells agents:
 - where files are located
@@ -274,6 +370,15 @@ If GitHub retrieval fails:
 
 Agents should not stop after a single failed retrieval attempt if a fallback path exists.
 
+If local execution outputs are missing:
+
+1. check `handoffs/` for:
+   - `RETURN_<analysis_name>.md`
+   - `run_manifest_<analysis_name>.json`
+   - `outputs_manifest_<analysis_name>.csv`
+2. if these are absent, state clearly that local execution is unverified
+3. do not over-interpret screenshots, figures, or informal summaries as proof of successful execution
+
 ---
 
 # Mission
@@ -283,36 +388,4 @@ The mission of the HippoTail agent lab is to:
 - generate reproducible analyses
 - refine hypotheses iteratively
 - produce publishable neuroscience
-
-# Handoff-aware execution rule
-
-For any task that will be executed locally in Codex or MATLAB, agents must use the HippoTail handoff system defined in:
-
-`docs/HippoTail_OperatingSystem.md`
-
-and the repository folder:
-
-`handoffs/`
-
-Coding-adjacent agents must not assume that locally executed outputs are visible to cloud agents unless returned through:
-
-- `RETURN_<analysis_name>.md`
-- `run_manifest_<analysis_name>.json`
-- `outputs_manifest_<analysis_name>.csv`
-
-Agents should treat local execution as unverified until these return artifacts are available.
-
-# Role-specific handoff duties
-
-DesignBoss:
-- defines the scientific question and required outputs
-- contributes analysis specifications for `EXECUTE_<analysis_name>.md`
-
-DataBoss:
-- defines source tables, required columns, derivations, filters, and QC rules
-- contributes dataset and preprocessing sections for `EXECUTE_<analysis_name>.md`
-
-ResultsBoss:
-- assembles the final `EXECUTE_<analysis_name>.md`
-- writes or revises code in `code/`
-- interprets `RETURN_<analysis_name>.md` and manifests after local execution
+```
