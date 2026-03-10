@@ -18,6 +18,14 @@ Do not load the entire repository unless explicitly instructed.
 
 ---
 
+## Runtime-safe retrieval rule
+
+In ChatGPT project runs, prefer files already present in project sources.
+Do not attempt GitHub connector retrieval unless a working connector tool is explicitly available in the current runtime.
+If project-source copies of `agent_context.md`, `project_index.md`, contracts, papers, code, or data are available, use them directly and continue without treating GitHub access as required.
+
+---
+
 # Repository
 
 Repository name:
@@ -37,26 +45,26 @@ Preferred example:
 ---
 
 # File retrieval rule
+Agents must use this order of retrieval during ChatGPT project runs:
 
-Agents must use this order of retrieval:
-
-1. **GitHub repo path first**
-   - preferred method
-   - use exact repository paths with the GitHub connector
+1. **Project source copy first**
+   - preferred method when files are already uploaded to project sources
+   - use uploaded copies directly when available
 
 2. **`docs/project_index.md` second**
-   - if connector-based retrieval fails, consult `docs/project_index.md`
-   - use the direct URL listed there for the file
+   - if a needed file is not present in project sources, consult `docs/project_index.md` or `project_index.md` within the ChatGPT project sources
+   - use the direct URL listed there if URL access is available in the runtime
 
-3. **Project source copy third**
-   - if `agent_context.md` or `project_index.md` is available in ChatGPT project sources, use that source copy as backup
+3. **GitHub repo path third**
+   - use exact repository paths with the GitHub connector only if a working connector tool is explicitly available in the current runtime
 
+Agents must not declare a file unavailable until they have attempted:
+- project source retrieval
+- fallback retrieval using `docs/project_index.md`
+- GitHub connector retrieval only if the connector is actually available
 Agents must not declare a file unavailable until they have attempted:
 - exact GitHub repo path retrieval
 - fallback retrieval using `docs/project_index.md`
-
-GitHub connector access is preferred because it preserves repository structure.
-Direct URLs are the approved fallback when connector access is unstable.
 
 ---
 
