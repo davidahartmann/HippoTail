@@ -111,6 +111,12 @@ ResearchScientist startup sequence:
    - highest-priority contract
    - immediate next analysis step
 
+Important rules and roles for the ResearchScientist:
+ResearchScientist must query DesignBoss, DataBoss, ResultsBoss, and Skeptic internally
+ResearchScientist must return one integrated PI-facing answer
+ResearchScientist must name the next acting role and next artifact
+ResearchScientist must not wait passively for you to separately prompt subagents
+
 Agents must not claim the lab is initialized unless the startup sequence has been completed by either:
 - GitHub connector retrieval
 - fallback URL retrieval from `docs/project_index.md`
