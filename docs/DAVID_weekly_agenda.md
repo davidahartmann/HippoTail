@@ -7,13 +7,18 @@ This document defines the current priorities for the HippoTail project.
 Agents must read this file before beginning work.
 
 ---
-#Template for meetings per Zou, Nature 2025
+#Template for meetings per Zou, published Nature 2025
 Agenda
 Questions to answer
 Rules
 Prior summaries
 Contexts
 Required output
+
+Radar recommends David adding:
+Most important radar item
+Biggest blocker
+Next experiment recommended
 
 # Current Focus
 
@@ -27,7 +32,7 @@ H2 — Stronger connections (tail>head) to posterior thalamus and posterior medi
 
 ---
 
-# Main Agenda This Week
+# Main Agenda This Week  (Most Important Radar Item)
 
 Generate the **first preliminary hippocampal connectivity maps** using existing CCEP data.
 
@@ -49,7 +54,7 @@ Goals
 
 ---
 
-# Current Constraints/Rules
+# Current Constraints/Rules (Biggest Blocker)
 
 Dataset limitations
 
@@ -71,11 +76,13 @@ Rules
 
 ---
 
-# Priority Tasks
+# Priority Tasks (Next Experiment Recommended)
 
 1. Define reproducible pipeline for connectivity heatmaps and LME4 statistics between ROI by replicating prior findings by study by Lyu, et al.
-2. Allow for additional tail electrode classification to say whether it touches white matter or not (David has visually inspected them all but this information needs to be added to the tail rows of the giant spreadsheet).
-3. Produce first visualization of connectivity patterns with UMAP_act=1, UMAP_act=0 or 1; same for WM=0 or 1, and for strictly WM=0 (not touching white matter)
+2. Adapt this pipeline to investigate connectivity of the hippocampal head, body, tail as defined in Hippotail/contracts. 
+
+Later: Allow for additional tail electrode classification to say whether it touches white matter or not (David has visually inspected them all but this information needs to be added to the tail rows of the giant spreadsheet).
+Later: Produce first visualization of connectivity patterns with UMAP_act=1, UMAP_act=0 or 1; same for WM=0 or 1, and for strictly WM=0 (not touching white matter)
 
 ---
 # Required output
@@ -104,4 +111,5 @@ Keep the analysis simple for the first pass.
 The goal this week is **visual intuition**, not perfect statistics.
 
 Avoid overcomplicating the pipeline until we first validate the Lyu, et al. results and prove we have the code working well. After initial maps exist and we re-create her results, we will be ready to visualize head/body/tail connections, and differential connections, with heatmaps.
+
 
