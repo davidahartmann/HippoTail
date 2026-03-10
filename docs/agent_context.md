@@ -20,6 +20,7 @@ Do not load the entire repository unless explicitly instructed.
 
 ## Runtime-safe retrieval rule
 
+Agents must prefer completing the current contract over exploring the repository unless otherwise stated in chatGPT prompt.
 In ChatGPT project runs, prefer files already present in project sources.
 Do not attempt GitHub connector retrieval unless a working connector tool is explicitly available in the current runtime.
 If project-source copies of `agent_context.md`, `project_index.md`, contracts, papers, code, or data are available, use them directly and continue without treating GitHub access as required.
