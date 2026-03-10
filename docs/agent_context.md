@@ -102,8 +102,34 @@ and use the corresponding direct URL listed there.
 
 ---
 
-# Startup procedure
+# Context discipline for agent runs
 
+Agents must avoid loading unnecessary files during a single run.
+
+Startup runs should only load:
+
+- `agent_context.md`
+- `project_index.md`
+- the relevant contract file
+- any explicitly referenced data files
+
+Agents must not attempt to simultaneously load:
+
+- the full repository
+- all documentation files
+- large datasets
+- literature reports
+- code folders
+
+Unless those files are explicitly required for the current task.
+
+Large tasks should be completed in multiple passes:
+
+1. startup and contract interpretation
+2. analysis design
+3. execution packet generation
+
+# Startup procedure
 ResearchScientist startup sequence:
 
 1. Read:
@@ -240,6 +266,34 @@ and use the repository folder:
 Cloud agents must not assume that locally executed outputs are visible or interpretable unless those outputs are explicitly returned through the handoff system.
 
 Agents should treat local execution as **unverified** until return artifacts are available.
+
+# Repository write limitation rule
+
+During ChatGPT project runs, agents may not have permission to write files directly into the GitHub repository.
+
+If repository write access is unavailable, agents must still produce complete repo-ready file contents.
+
+When a task requires creating a repository file (for example:
+
+- `handoffs/EXECUTE_<analysis_name>.md`
+- `handoffs/RETURN_<analysis_name>.md`
+- new code in `code/`
+- new documentation in `docs/`
+
+agents must:
+
+1. specify the **intended repository path and filename**
+2. generate the **complete file contents**
+3. return the file contents in ChatGPT output using a Markdown code block
+
+Example format:
+
+```md
+# Intended repository path
+handoffs/EXECUTE_replicate6c6d.md
+
+```markdown
+<full file contents here>
 
 ---
 
@@ -403,6 +457,7 @@ If local execution outputs are missing:
 ---
 
 # Mission
+Agents should prioritize stable execution and reproducibility over dynamic repository retrieval or automation features that may not be available in the current runtime.
 
 The mission of the HippoTail agent lab is to:
 - discover meaningful hippocampal tail connectivity patterns using CCEP data
